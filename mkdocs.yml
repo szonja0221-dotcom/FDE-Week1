@@ -1,0 +1,21 @@
+site_name: FDE Week1 (Monday-test)
+site_description: Build output for Monday-test markdown docs
+
+docs_dir: Monday-test
+site_dir: site
+
+nav:
+  - Home: index.md
+  - Gate1: Gate1-Szonja-Szin.md
+  - Production Spec: PRODUCTION_SPEC.md
+  - CLAUDE: CLAUDE.md
+
+theme:
+  name: material
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
