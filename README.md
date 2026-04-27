@@ -24,3 +24,16 @@ The agent categorizes every submission into one of three lanes:
 - **Multi-Rule Precedence:** Automatically resolves conflicts between Local, State, and IBC codes.
 - **Complexity Leakage Protection:** Integrated metrics to track and alert if complex projects are accidentally misclassified.
 - **Audit Traceability:** Immutable logs for every agent reasoning step and status transition.
+
+## 🏗️ Build (renders `Gate1-Szonja-Szin.md`)
+
+This repo includes a simple static-site build for the `Monday-test/Gate1-Szonja-Szin.md` document using MkDocs.
+
+From the `FDE-Week1` directory:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m mkdocs build -f mkdocs.yml
+```
+
+Output is written to `FDE-Week1/site/` (open `site/index.html`).
