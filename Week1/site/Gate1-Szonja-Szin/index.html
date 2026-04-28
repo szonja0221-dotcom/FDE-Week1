@@ -1,0 +1,2811 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Build output for Monday-test markdown docs">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../PRODUCTION_SPEC/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Gate1 - FDE Week1 (Monday-test)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fnol-agentic-solution-claudemd" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FDE Week1 (Monday-test)" class="md-header__button md-logo" aria-label="FDE Week1 (Monday-test)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FDE Week1 (Monday-test)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gate1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="FDE Week1 (Monday-test)" class="md-nav__button md-logo" aria-label="FDE Week1 (Monday-test)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FDE Week1 (Monday-test)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gate1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gate1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-core-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Core Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Core Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-claim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 claim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 policy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-state-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. State Machine
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. State Machine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claim_status-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLAIM_STATUS Transitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Validation Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Validation Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-high-value-high-severity-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 High-Value / High-Severity Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-policy-active-status-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Policy Active Status Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-policy-coverage-date-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Policy Coverage Date Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-coverage-limit-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Coverage Limit Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-loss-type-coverage-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Loss Type Coverage Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-routing-logic-skill-group-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 Routing Logic — Skill-Group Matching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-sla-deadline-enforcement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 SLA Deadline Enforcement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-agent-guardrails-never-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Agent Guardrails — NEVER List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-integration-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Integration Contracts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Integration Contracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-crm-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 CRM — REST API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-policy-system-soap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Policy System — SOAP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-document-management-system-dms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Document Management System (DMS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-configurable-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Configurable Constants
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Naming Conventions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-out-of-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Out of Scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRODUCTION_SPEC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production Spec
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLAUDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-core-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Core Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Core Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-claim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 claim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 policy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-state-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. State Machine
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. State Machine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claim_status-transitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLAIM_STATUS Transitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Validation Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Validation Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-high-value-high-severity-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 High-Value / High-Severity Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-policy-active-status-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Policy Active Status Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-policy-coverage-date-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Policy Coverage Date Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-coverage-limit-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Coverage Limit Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-loss-type-coverage-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Loss Type Coverage Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-routing-logic-skill-group-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 Routing Logic — Skill-Group Matching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-sla-deadline-enforcement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 SLA Deadline Enforcement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-agent-guardrails-never-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Agent Guardrails — NEVER List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-integration-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Integration Contracts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Integration Contracts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-crm-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 CRM — REST API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-policy-system-soap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Policy System — SOAP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-document-management-system-dms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Document Management System (DMS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-configurable-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Configurable Constants
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Naming Conventions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-out-of-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Out of Scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fnol-agentic-solution-claudemd">FNOL Agentic Solution — CLAUDE.md<a class="headerlink" href="#fnol-agentic-solution-claudemd" title="Permanent link">&para;</a></h1>
+<h2 id="1-purpose">1. Purpose<a class="headerlink" href="#1-purpose" title="Permanent link">&para;</a></h2>
+<p>This system exists to automate the ingestion, triage, and routing of <strong>300 daily First Notice of Loss (FNOL) reports</strong> arriving as unstructured text (email, phone transcript, web form) into a structured claims workflow.</p>
+<p><strong>Objectives:</strong>
+- Reduce routing error rate from <strong>18% → &lt;2%</strong>
+- Eliminate the <strong>31% SLA breach rate</strong> by enforcing a <strong>2-hour end-to-end processing window</strong> (<code>SLA_WINDOW_SECONDS = 7200</code>)</p>
+<p>The agent triages and routes claims. It does not adjudicate, approve, deny, or communicate claim outcomes to claimants.</p>
+<hr />
+<h2 id="2-core-entities">2. Core Entities<a class="headerlink" href="#2-core-entities" title="Permanent link">&para;</a></h2>
+<h3 id="21-claim">2.1 <code>claim</code><a class="headerlink" href="#21-claim" title="Permanent link">&para;</a></h3>
+<p>Represents a single FNOL submission from ingestion through acknowledgement.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>claim_id</code></td>
+<td><code>uuid</code></td>
+<td>Primary key; system-generated at ingestion</td>
+</tr>
+<tr>
+<td><code>source_type</code></td>
+<td><code>enum SOURCE_TYPE</code></td>
+<td>Channel of ingestion</td>
+</tr>
+<tr>
+<td><code>raw_payload_url</code></td>
+<td><code>string</code></td>
+<td>Immutable URL to raw transcript/email in DMS; write-once</td>
+</tr>
+<tr>
+<td><code>severity_score</code></td>
+<td><code>integer</code></td>
+<td>1–10 scale; computed by triage agent from NLP extraction</td>
+</tr>
+<tr>
+<td><code>policy_id</code></td>
+<td><code>string</code></td>
+<td>Extracted from raw payload; used to query Policy system</td>
+</tr>
+<tr>
+<td><code>claim_value</code></td>
+<td><code>decimal</code></td>
+<td>USD; extracted or estimated from raw payload</td>
+</tr>
+<tr>
+<td><code>loss_type</code></td>
+<td><code>enum LOSS_TYPE</code></td>
+<td>Determines adjuster skill-group routing</td>
+</tr>
+<tr>
+<td><code>date_of_loss</code></td>
+<td><code>date</code></td>
+<td>ISO 8601; extracted from raw payload</td>
+</tr>
+<tr>
+<td><code>validation_status</code></td>
+<td><code>enum VALIDATION_STATUS</code></td>
+<td>Set by validation step</td>
+</tr>
+<tr>
+<td><code>routing_target</code></td>
+<td><code>enum ROUTING_TARGET</code></td>
+<td>Set by routing step; null until VALIDATED</td>
+</tr>
+<tr>
+<td><code>sla_deadline</code></td>
+<td><code>string</code></td>
+<td>ISO 8601 datetime; system-set as <code>ingested_at + SLA_WINDOW_SECONDS</code></td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td><code>enum CLAIM_STATUS</code></td>
+<td>Current lifecycle state</td>
+</tr>
+<tr>
+<td><code>policy_snapshot</code></td>
+<td><code>jsonb</code></td>
+<td>Write-once copy of Policy response at validation time</td>
+</tr>
+<tr>
+<td><code>agent_reasoning</code></td>
+<td><code>text</code></td>
+<td>Structured rationale; write-once after triage</td>
+</tr>
+<tr>
+<td><code>extraction_confidence</code></td>
+<td><code>decimal</code></td>
+<td>0.0–1.0; if below <code>EXTRACTION_CONFIDENCE_THRESHOLD</code>, flag for human</td>
+</tr>
+<tr>
+<td><code>retry_count</code></td>
+<td><code>integer</code></td>
+<td>SOAP retry counter; must not exceed <code>MAX_SOAP_RETRIES</code></td>
+</tr>
+<tr>
+<td><code>assigned_specialist_id</code></td>
+<td><code>string \| null</code></td>
+<td>CRM adjuster ID; populated at ROUTED step</td>
+</tr>
+<tr>
+<td><code>human_review_reason</code></td>
+<td><code>text \| null</code></td>
+<td>Required whenever <code>routing_target = HUMAN_REVIEW</code> or <code>SOAP_ESCALATION_QUEUE</code></td>
+</tr>
+<tr>
+<td><code>acknowledged_at</code></td>
+<td><code>timestamp</code></td>
+<td>ISO 8601 UTC; set only after <code>VALID</code> status confirmed and <code>status = ROUTED</code></td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td><code>timestamp</code></td>
+<td>System-set at ingestion; immutable</td>
+</tr>
+<tr>
+<td><code>updated_at</code></td>
+<td><code>timestamp</code></td>
+<td>System-set on every mutation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Enum: <code>SOURCE_TYPE</code></strong></p>
+<pre><code>EMAIL
+PHONE
+WEB
+</code></pre>
+<p><strong>Enum: <code>LOSS_TYPE</code></strong></p>
+<pre><code>AUTO
+PROPERTY
+LIABILITY
+MEDICAL
+OTHER
+</code></pre>
+<p><strong>Enum: <code>VALIDATION_STATUS</code></strong></p>
+<pre><code>PENDING      -- default at ingestion
+VALID        -- policy confirmed active, date_of_loss within coverage window
+INVALID      -- policy lapsed, date_of_loss out of range, policy not found, or loss type not covered
+</code></pre>
+<p><strong>Enum: <code>ROUTING_TARGET</code></strong></p>
+<pre><code>AUTO_ADJUSTER_STANDARD
+AUTO_ADJUSTER_HIGH_PRIORITY
+PROPERTY_ADJUSTER_STANDARD
+PROPERTY_ADJUSTER_HIGH_PRIORITY
+LIABILITY_ADJUSTER_STANDARD
+LIABILITY_ADJUSTER_HIGH_PRIORITY
+MEDICAL_ADJUSTER_STANDARD
+MEDICAL_ADJUSTER_HIGH_PRIORITY
+HUMAN_ADJUSTER_HIGH_PRIORITY    -- mandatory for high-value or high-severity claims
+HUMAN_REVIEW                    -- mandatory for invalid, unresolvable, or uncertain claims
+SOAP_ESCALATION_QUEUE           -- SOAP timeout after MAX_SOAP_RETRIES exhausted
+</code></pre>
+<p><strong>Enum: <code>CLAIM_STATUS</code></strong></p>
+<pre><code>RECEIVED
+TRIAGED
+VALIDATED
+ROUTED
+ACKNOWLEDGED
+ESCALATED
+</code></pre>
+<hr />
+<h3 id="22-policy">2.2 <code>policy</code><a class="headerlink" href="#22-policy" title="Permanent link">&para;</a></h3>
+<p>Not persisted as a standalone record — retrieved on-demand from the SOAP Legacy System and stored as an immutable snapshot in <code>claim.policy_snapshot</code> at validation time.</p>
+<p><strong>Retrieved fields (from <code>GetPolicyDetails</code> response):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>policy_id</code></td>
+<td><code>string</code></td>
+<td>Matches <code>claim.policy_id</code></td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td><code>enum POLICY_STATUS</code></td>
+<td>Must be <code>ACTIVE</code> for claim to reach <code>VALID</code></td>
+</tr>
+<tr>
+<td><code>coverage_limit</code></td>
+<td><code>decimal</code></td>
+<td>USD; upper bound on covered claim value</td>
+</tr>
+<tr>
+<td><code>policy_start_date</code></td>
+<td><code>date</code></td>
+<td>ISO 8601</td>
+</tr>
+<tr>
+<td><code>policy_end_date</code></td>
+<td><code>date</code></td>
+<td>ISO 8601</td>
+</tr>
+<tr>
+<td><code>covered_loss_types</code></td>
+<td><code>LOSS_TYPE[]</code></td>
+<td>Subset of <code>LOSS_TYPE</code> enum</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Enum: <code>POLICY_STATUS</code></strong></p>
+<pre><code>ACTIVE
+LAPSED
+CANCELLED
+PENDING
+</code></pre>
+<hr />
+<h2 id="3-state-machine">3. State Machine<a class="headerlink" href="#3-state-machine" title="Permanent link">&para;</a></h2>
+<h3 id="claim_status-transitions"><code>CLAIM_STATUS</code> Transitions<a class="headerlink" href="#claim_status-transitions" title="Permanent link">&para;</a></h3>
+<pre><code>RECEIVED
+    │
+    ▼
+TRIAGED            ← agent extracts: severity_score, claim_value, loss_type,
+    │                 date_of_loss, policy_id from raw_payload_url
+    │                 agent writes agent_reasoning (write-once)
+    │                 if extraction_confidence &lt; EXTRACTION_CONFIDENCE_THRESHOLD:
+    │                   → set routing_target = HUMAN_REVIEW
+    │                   → populate human_review_reason = &quot;LOW_EXTRACTION_CONFIDENCE: {score}&quot;
+    │                   → skip VALIDATED; notify human specialist queue
+    │
+    ▼
+VALIDATED          ← agent queries GetPolicyDetails (SOAP) using claim.policy_id
+    │                 on success:
+    │                   → write policy_snapshot (write-once)
+    │                   → evaluate all Validation Rules (Section 4)
+    │                   → set validation_status = VALID or INVALID
+    │                 on SOAP timeout or network error:
+    │                   → increment retry_count
+    │                   → if retry_count &lt; MAX_SOAP_RETRIES:
+    │                       retry after SOAP_RETRY_BACKOFF_SECONDS * (retry_count^2) seconds
+    │                   → if retry_count &gt;= MAX_SOAP_RETRIES:
+    │                       set status = ESCALATED
+    │                       set routing_target = SOAP_ESCALATION_QUEUE
+    │                       notify human specialist queue synchronously
+    │                       halt pipeline (do not advance to ROUTED)
+    │                 if validation_status = INVALID:
+    │                   → set routing_target = HUMAN_REVIEW
+    │                   → populate human_review_reason with specific failed condition
+    │                   → halt routing pipeline (do not advance to ROUTED)
+    │
+    ▼
+ROUTED             ← agent sets routing_target per Routing Logic (Section 4.5)
+    │                 agent updates CRM via PATCH /claims/{claim_id}
+    │                 agent writes assigned_specialist_id from CRM response
+    │                 on CRM error: route to HUMAN_REVIEW; populate human_review_reason
+    │
+    ▼
+ACKNOWLEDGED       ← agent notifies claimant ONLY when ALL conditions are true:
+                       (a) claim.validation_status = VALID
+                       (b) claim.status = ROUTED
+                       (c) claim.routing_target is set and non-null
+                      agent sets acknowledged_at = current UTC timestamp
+</code></pre>
+<p><strong><code>ESCALATED</code></strong> is a terminal exception state. An <code>ESCALATED</code> claim must be resolved by a human specialist before it may re-enter the pipeline at <code>VALIDATED</code>. The agent must not attempt to auto-resume an <code>ESCALATED</code> claim.</p>
+<hr />
+<h2 id="4-validation-rules">4. Validation Rules<a class="headerlink" href="#4-validation-rules" title="Permanent link">&para;</a></h2>
+<p>All rules are evaluated after a successful <code>GetPolicyDetails</code> response and before <code>routing_target</code> is written. A rule failure must produce an actionable, specific error string in <code>human_review_reason</code>. Silent failures are not permitted.</p>
+<h3 id="41-high-value-high-severity-rule">4.1 High-Value / High-Severity Rule<a class="headerlink" href="#41-high-value-high-severity-rule" title="Permanent link">&para;</a></h3>
+<pre><code>IF severity_score &gt; HIGH_SEVERITY_THRESHOLD          (default: 7)
+   OR claim_value &gt; HIGH_VALUE_THRESHOLD_USD         (default: 10000)
+THEN
+    routing_target = HUMAN_ADJUSTER_HIGH_PRIORITY
+</code></pre>
+<p>This rule is evaluated <strong>first</strong>, before skill-group matching. It takes precedence over all other <code>routing_target</code> assignments except <code>HUMAN_REVIEW</code> and <code>SOAP_ESCALATION_QUEUE</code>.</p>
+<h3 id="42-policy-active-status-rule">4.2 Policy Active Status Rule<a class="headerlink" href="#42-policy-active-status-rule" title="Permanent link">&para;</a></h3>
+<pre><code>IF policy.status != ACTIVE
+THEN
+    validation_status = INVALID
+    routing_target    = HUMAN_REVIEW
+    human_review_reason = &quot;POLICY_INACTIVE: policy_id={policy_id} status={policy.status}&quot;
+</code></pre>
+<h3 id="43-policy-coverage-date-rule">4.3 Policy Coverage Date Rule<a class="headerlink" href="#43-policy-coverage-date-rule" title="Permanent link">&para;</a></h3>
+<pre><code>IF claim.date_of_loss &lt; policy.policy_start_date
+   OR claim.date_of_loss &gt; policy.policy_end_date
+THEN
+    validation_status = INVALID
+    routing_target    = HUMAN_REVIEW
+    human_review_reason must cite:
+      - the claim.date_of_loss value
+      - the policy_start_date and policy_end_date values
+      - which boundary was violated
+</code></pre>
+<h3 id="44-coverage-limit-rule">4.4 Coverage Limit Rule<a class="headerlink" href="#44-coverage-limit-rule" title="Permanent link">&para;</a></h3>
+<pre><code>IF claim_value &gt; policy.coverage_limit
+THEN
+    routing_target    = HUMAN_REVIEW
+    human_review_reason = &quot;COVERAGE_EXCEEDED: claim_value={claim_value} &gt; coverage_limit={policy.coverage_limit}&quot;
+</code></pre>
+<p>Note: this does not set <code>validation_status = INVALID</code> on its own; it routes to <code>HUMAN_REVIEW</code> for a coverage determination.</p>
+<h3 id="45-loss-type-coverage-rule">4.5 Loss Type Coverage Rule<a class="headerlink" href="#45-loss-type-coverage-rule" title="Permanent link">&para;</a></h3>
+<pre><code>IF claim.loss_type NOT IN policy.covered_loss_types
+THEN
+    validation_status = INVALID
+    routing_target    = HUMAN_REVIEW
+    human_review_reason = &quot;UNCOVERED_LOSS_TYPE: loss_type={loss_type} not in {policy.covered_loss_types}&quot;
+</code></pre>
+<h3 id="46-routing-logic-skill-group-matching">4.6 Routing Logic — Skill-Group Matching<a class="headerlink" href="#46-routing-logic-skill-group-matching" title="Permanent link">&para;</a></h3>
+<p>Evaluated only when Rules 4.1–4.5 do not trigger <code>HUMAN_REVIEW</code> or <code>HUMAN_ADJUSTER_HIGH_PRIORITY</code>. Match <code>claim.loss_type</code> to the CRM adjuster skill-group:</p>
+<table>
+<thead>
+<tr>
+<th><code>loss_type</code></th>
+<th>Standard <code>routing_target</code></th>
+<th>High-Priority <code>routing_target</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AUTO</code></td>
+<td><code>AUTO_ADJUSTER_STANDARD</code></td>
+<td><code>AUTO_ADJUSTER_HIGH_PRIORITY</code></td>
+</tr>
+<tr>
+<td><code>PROPERTY</code></td>
+<td><code>PROPERTY_ADJUSTER_STANDARD</code></td>
+<td><code>PROPERTY_ADJUSTER_HIGH_PRIORITY</code></td>
+</tr>
+<tr>
+<td><code>LIABILITY</code></td>
+<td><code>LIABILITY_ADJUSTER_STANDARD</code></td>
+<td><code>LIABILITY_ADJUSTER_HIGH_PRIORITY</code></td>
+</tr>
+<tr>
+<td><code>MEDICAL</code></td>
+<td><code>MEDICAL_ADJUSTER_STANDARD</code></td>
+<td><code>MEDICAL_ADJUSTER_HIGH_PRIORITY</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>HUMAN_REVIEW</code></td>
+<td><code>HUMAN_ADJUSTER_HIGH_PRIORITY</code></td>
+</tr>
+</tbody>
+</table>
+<p>High-priority row applies when Rule 4.1 triggers. Standard row applies otherwise.</p>
+<h3 id="47-sla-deadline-enforcement">4.7 SLA Deadline Enforcement<a class="headerlink" href="#47-sla-deadline-enforcement" title="Permanent link">&para;</a></h3>
+<pre><code>sla_deadline = created_at + SLA_WINDOW_SECONDS   (default: 7200)
+</code></pre>
+<p>If <code>current_utc_time &gt; sla_deadline</code> at any pipeline step, the agent must:
+1. Set <code>routing_target = HUMAN_REVIEW</code> (if not already routed to a higher-priority queue)
+2. Set <code>human_review_reason = "SLA_BREACH: deadline={sla_deadline} exceeded at step={current_status}"</code>
+3. Notify the supervisor queue synchronously before proceeding</p>
+<hr />
+<h2 id="5-agent-guardrails-never-list">5. Agent Guardrails — NEVER List<a class="headerlink" href="#5-agent-guardrails-never-list" title="Permanent link">&para;</a></h2>
+<p>These are absolute constraints. Violating any of them is a system failure, not a configuration issue.</p>
+<ol>
+<li>
+<p><strong>NEVER auto-reject or auto-invalidate a claim as a terminal outcome.</strong> When validation fails, the agent must set <code>routing_target = HUMAN_REVIEW</code> and populate <code>human_review_reason</code> with a specific, actionable explanation. A human reviewer must confirm any final invalidation.</p>
+</li>
+<li>
+<p><strong>NEVER acknowledge a claim to a claimant before <code>validation_status = VALID</code> is confirmed and <code>claim.status = ROUTED</code> is set.</strong> The agent must not call any claimant-facing notification channel until both conditions are true. Premature acknowledgement is a compliance violation.</p>
+</li>
+<li>
+<p><strong>NEVER query the Legacy SOAP endpoint more than <code>MAX_SOAP_RETRIES</code> times for a single claim.</strong> On exhaustion, the agent must set <code>status = ESCALATED</code>, <code>routing_target = SOAP_ESCALATION_QUEUE</code>, and synchronously notify the human specialist queue. The agent must not silently drop the claim or reset <code>retry_count</code>.</p>
+</li>
+<li>
+<p><strong>NEVER use vague verbs.</strong> The agent's code, logs, and <code>agent_reasoning</code> output must use precise operations only:</p>
+</li>
+<li>Replace ~~"handle"~~ → <code>query</code>, <code>update</code>, <code>notify</code>, <code>extract</code>, <code>validate</code>, <code>route</code>, <code>write</code></li>
+<li>
+<p>Replace ~~"process"~~ → name the exact operation (e.g., <code>query_soap_policy</code>, <code>write_policy_snapshot</code>, <code>update_crm_routing</code>)</p>
+</li>
+<li>
+<p><strong>NEVER suppress or omit a validation failure to improve routing metrics.</strong> Every detected issue must be written to <code>human_review_reason</code> with the specific condition that failed, regardless of downstream routing impact.</p>
+</li>
+<li>
+<p><strong>NEVER modify <code>agent_reasoning</code>, <code>raw_payload_url</code>, or <code>policy_snapshot</code> after initial write.</strong> These are write-once fields. If re-triage is required, a new <code>claim</code> record must be created referencing the original <code>claim_id</code>.</p>
+</li>
+<li>
+<p><strong>NEVER expose PII in logs, traces, monitoring outputs, or error messages.</strong> Use <code>claim_id</code> and <code>policy_id</code> as identifiers in all system outputs. Claimant name, address, phone number, and raw policy details must not appear in structured logs.</p>
+</li>
+<li>
+<p><strong>NEVER route a claim with <code>validation_status = INVALID</code> to any adjuster queue.</strong> Claims with <code>INVALID</code> status route exclusively to <code>HUMAN_REVIEW</code>.</p>
+</li>
+<li>
+<p><strong>NEVER escalate silently.</strong> Every transition to <code>SOAP_ESCALATION_QUEUE</code> or <code>HUMAN_REVIEW</code> must generate an explicit, addressable notification to the designated specialist queue with a non-null, non-empty <code>human_review_reason</code>.</p>
+</li>
+<li>
+<p><strong>NEVER act on unverified input.</strong> Before the agent begins triage:</p>
+<ul>
+<li>All raw payloads must pass integrity checks via DMS</li>
+<li>All <code>policy_id</code> values must be queryable against the live SOAP system</li>
+<li>All <code>date_of_loss</code> values must parse as valid ISO 8601 dates</li>
+<li>All <code>source_type</code> values must match a defined <code>SOURCE_TYPE</code> enum member
+Unverifiable inputs must be routed to <code>HUMAN_REVIEW</code> with a specific <code>human_review_reason</code>.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="6-integration-contracts">6. Integration Contracts<a class="headerlink" href="#6-integration-contracts" title="Permanent link">&para;</a></h2>
+<h3 id="61-crm-rest-api">6.1 CRM — REST API<a class="headerlink" href="#61-crm-rest-api" title="Permanent link">&para;</a></h3>
+<p><strong>Endpoint:</strong> <code>PATCH /claims/{claim_id}</code>
+<strong>Base URL:</strong> <code>CRM_BASE_URL</code> environment variable
+<strong>Auth:</strong> <code>Authorization: Bearer {CRM_API_TOKEN}</code></p>
+<p><strong>Request body (JSON):</strong></p>
+<pre><code class="language-json">{
+  &quot;claim_id&quot;: &quot;&lt;uuid&gt;&quot;,
+  &quot;routing_target&quot;: &quot;&lt;ROUTING_TARGET enum value&gt;&quot;,
+  &quot;assigned_specialist_id&quot;: &quot;&lt;string | null&gt;&quot;,
+  &quot;status&quot;: &quot;ROUTED&quot;,
+  &quot;sla_deadline&quot;: &quot;&lt;ISO 8601 datetime&gt;&quot;
+}
+</code></pre>
+<p><strong>Success:</strong> <code>200 OK</code> with updated claim record. Agent writes <code>assigned_specialist_id</code> from CRM response body.</p>
+<p><strong>Failure:</strong> On <code>4xx</code> or <code>5xx</code>, the agent must:
+1. Log <code>claim_id</code> and HTTP status code (no PII in log)
+2. Set <code>routing_target = HUMAN_REVIEW</code>
+3. Set <code>human_review_reason = "CRM_UPDATE_FAILED: HTTP {status_code} at PATCH /claims/{claim_id}"</code>
+4. Not silently continue to <code>ACKNOWLEDGED</code></p>
+<hr />
+<h3 id="62-policy-system-soap">6.2 Policy System — SOAP<a class="headerlink" href="#62-policy-system-soap" title="Permanent link">&para;</a></h3>
+<p><strong>Operation:</strong> <code>GetPolicyDetails</code>
+<strong>WSDL:</strong> <code>SOAP_WSDL_URL</code> environment variable
+<strong>Auth:</strong> HTTP Basic — <code>SOAP_USERNAME</code> / <code>SOAP_PASSWORD</code> environment variables</p>
+<p><strong>Request:</strong></p>
+<pre><code class="language-xml">&lt;GetPolicyDetails&gt;
+  &lt;PolicyId&gt;{policy_id}&lt;/PolicyId&gt;
+&lt;/GetPolicyDetails&gt;
+</code></pre>
+<p><strong>Response fields consumed:</strong> <code>policy_id</code>, <code>status</code>, <code>coverage_limit</code>, <code>policy_start_date</code>, <code>policy_end_date</code>, <code>covered_loss_types</code></p>
+<p><strong>Retry behavior:</strong>
+- On <code>SOAP_TIMEOUT</code> or network error: wait <code>SOAP_RETRY_BACKOFF_SECONDS * (retry_count ^ 2)</code> seconds, then retry
+- Maximum attempts: <code>MAX_SOAP_RETRIES</code> (default: <code>3</code>)
+- On exhaustion: set <code>status = ESCALATED</code>, <code>routing_target = SOAP_ESCALATION_QUEUE</code>; notify human specialist queue synchronously</p>
+<p><strong>Error cases:</strong>
+| SOAP fault | Agent action |
+|---|---|
+| <code>PolicyNotFound</code> | <code>validation_status = INVALID</code>, <code>human_review_reason = "POLICY_NOT_FOUND: policy_id={policy_id}"</code> |
+| <code>ServiceUnavailable</code> | Retry up to <code>MAX_SOAP_RETRIES</code>; escalate on exhaustion |
+| Malformed response | <code>routing_target = HUMAN_REVIEW</code>, <code>human_review_reason = "SOAP_PARSE_ERROR: {fault_string}"</code> |</p>
+<hr />
+<h3 id="63-document-management-system-dms">6.3 Document Management System (DMS)<a class="headerlink" href="#63-document-management-system-dms" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose:</strong> Store raw transcript/email payload at ingestion; make available for human review.</p>
+<p><strong>Upload (at ingestion):</strong>
+- <code>POST {DMS_BASE_URL}/documents</code> — multipart body containing raw payload
+- Response contains <code>document_url</code> → write to <code>claim.raw_payload_url</code> (write-once)
+- If upload fails, halt ingestion; do not create <code>claim</code> record; return error to ingestion caller</p>
+<p><strong>Retrieval:</strong>
+- <code>GET {DMS_BASE_URL}/documents/{document_id}</code> — used by human reviewers only
+- The agent does not re-fetch <code>raw_payload_url</code> after ingestion; it operates on extracted fields</p>
+<p><strong>Auth:</strong> <code>Authorization: Bearer {DMS_API_TOKEN}</code></p>
+<hr />
+<h2 id="7-configurable-constants">7. Configurable Constants<a class="headerlink" href="#7-configurable-constants" title="Permanent link">&para;</a></h2>
+<p>All values are environment-variable-driven. No hardcoded thresholds.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SLA_WINDOW_SECONDS</code></td>
+<td><code>7200</code></td>
+<td>Seconds from <code>created_at</code> to <code>sla_deadline</code></td>
+</tr>
+<tr>
+<td><code>HIGH_SEVERITY_THRESHOLD</code></td>
+<td><code>7</code></td>
+<td><code>severity_score</code> above which <code>HUMAN_ADJUSTER_HIGH_PRIORITY</code> is mandatory</td>
+</tr>
+<tr>
+<td><code>HIGH_VALUE_THRESHOLD_USD</code></td>
+<td><code>10000</code></td>
+<td><code>claim_value</code> above which <code>HUMAN_ADJUSTER_HIGH_PRIORITY</code> is mandatory</td>
+</tr>
+<tr>
+<td><code>MAX_SOAP_RETRIES</code></td>
+<td><code>3</code></td>
+<td>Maximum SOAP query attempts per claim before <code>ESCALATED</code></td>
+</tr>
+<tr>
+<td><code>SOAP_RETRY_BACKOFF_SECONDS</code></td>
+<td><code>2</code></td>
+<td>Base for exponential backoff: <code>base * (retry_count ^ 2)</code> seconds</td>
+</tr>
+<tr>
+<td><code>EXTRACTION_CONFIDENCE_THRESHOLD</code></td>
+<td><code>0.75</code></td>
+<td>Below this, NLP extraction routes to <code>HUMAN_REVIEW</code></td>
+</tr>
+<tr>
+<td><code>SOAP_WSDL_URL</code></td>
+<td><em>(required)</em></td>
+<td>WSDL endpoint URL for <code>GetPolicyDetails</code></td>
+</tr>
+<tr>
+<td><code>CRM_API_TOKEN</code></td>
+<td><em>(required)</em></td>
+<td>Bearer token for CRM REST API</td>
+</tr>
+<tr>
+<td><code>CRM_BASE_URL</code></td>
+<td><em>(required)</em></td>
+<td>Base URL for CRM REST API</td>
+</tr>
+<tr>
+<td><code>DMS_API_TOKEN</code></td>
+<td><em>(required)</em></td>
+<td>Bearer token for DMS</td>
+</tr>
+<tr>
+<td><code>DMS_BASE_URL</code></td>
+<td><em>(required)</em></td>
+<td>Base URL for DMS</td>
+</tr>
+<tr>
+<td><code>SOAP_USERNAME</code></td>
+<td><em>(required)</em></td>
+<td>Basic auth username for SOAP endpoint</td>
+</tr>
+<tr>
+<td><code>SOAP_PASSWORD</code></td>
+<td><em>(required)</em></td>
+<td>Basic auth password for SOAP endpoint</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-naming-conventions">8. Naming Conventions<a class="headerlink" href="#8-naming-conventions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Convention</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Database tables and columns</td>
+<td><code>snake_case</code></td>
+<td><code>claim</code>, <code>routing_target</code>, <code>policy_snapshot</code></td>
+</tr>
+<tr>
+<td>Enum values</td>
+<td><code>SCREAMING_SNAKE_CASE</code></td>
+<td><code>HUMAN_ADJUSTER_HIGH_PRIORITY</code>, <code>SOAP_ESCALATION_QUEUE</code></td>
+</tr>
+<tr>
+<td>Python variables and functions</td>
+<td><code>snake_case</code></td>
+<td><code>validate_policy_coverage()</code>, <code>query_soap_policy()</code>, <code>write_policy_snapshot()</code></td>
+</tr>
+<tr>
+<td>Python classes</td>
+<td><code>PascalCase</code></td>
+<td><code>FnolClaim</code>, <code>PolicyValidator</code>, <code>RoutingEngine</code>, <code>SoapClient</code></td>
+</tr>
+<tr>
+<td>API endpoints</td>
+<td><code>kebab-case</code></td>
+<td><code>/claims/{id}/triage</code>, <code>/claims/{id}/route</code></td>
+</tr>
+<tr>
+<td>Environment variables</td>
+<td><code>SCREAMING_SNAKE_CASE</code></td>
+<td><code>HIGH_VALUE_THRESHOLD_USD</code>, <code>MAX_SOAP_RETRIES</code></td>
+</tr>
+<tr>
+<td>Constants</td>
+<td><code>SCREAMING_SNAKE_CASE</code></td>
+<td><code>DEFAULT_SLA_WINDOW_SECONDS = 7200</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="9-out-of-scope">9. Out of Scope<a class="headerlink" href="#9-out-of-scope" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Claims adjudication or final coverage determination (human adjuster responsibility)</li>
+<li>Reserve-setting or payment authorization</li>
+<li>Fraud scoring or detection (separate downstream system)</li>
+<li>Subrogation workflows</li>
+<li>Claimant self-service portal or status notifications beyond the single <code>ACKNOWLEDGED</code> event</li>
+<li>Policy endorsement or rider retrieval beyond <code>GetPolicyDetails</code></li>
+<li>Inspection scheduling or field assignment</li>
+</ul>
+<h1 id="fnol-agentic-solution-production-grade-specification">FNOL Agentic Solution — Production-Grade Specification<a class="headerlink" href="#fnol-agentic-solution-production-grade-specification" title="Permanent link">&para;</a></h1>
+<p><strong>Document Status:</strong> Draft v1.0
+<strong>Prepared by:</strong> Senior Foundations Development Engineer
+<strong>Date:</strong> 2026-04-27
+<strong>Applies to:</strong> <code>fnol-agent</code> system; 300 daily FNOL ingestions</p>
+<hr />
+<h2 id="deliverable-1-problem-statement-success-metrics">Deliverable 1: Problem Statement &amp; Success Metrics<a class="headerlink" href="#deliverable-1-problem-statement-success-metrics" title="Permanent link">&para;</a></h2>
+<h3 id="11-problem-statement">1.1 Problem Statement<a class="headerlink" href="#11-problem-statement" title="Permanent link">&para;</a></h3>
+<h4 id="business-perspective">Business Perspective<a class="headerlink" href="#business-perspective" title="Permanent link">&para;</a></h4>
+<p>The claims intake team ingests approximately 300 FNOL reports per day across three channels (email, phone transcript, web form). Each report arrives as unstructured text. A human analyst currently extracts structured fields, validates policy coverage against the Legacy SOAP system, and routes the claim to an adjuster skill group in the CRM. This manual pipeline produces two measurable failures:</p>
+<ul>
+<li><strong>18% routing error rate:</strong> Claims assigned to the wrong adjuster skill group, requiring re-assignment. Each re-assignment adds an estimated 2–4 hours of delay, triggers a second adjuster onboarding the claim, and creates a duplicate CRM audit trail that compliance teams must reconcile.</li>
+<li><strong>31% SLA breach rate:</strong> Claims not acknowledged within the 2-hour contractual window. SLA breaches expose the organization to regulatory penalties under state insurance codes, erode claimant trust scores (measured by post-claim NPS), and require manual breach reporting to the compliance officer.</li>
+</ul>
+<p>At 300 claims/day, a 31% breach rate equals ~93 SLA violations per day. The current staffing model cannot absorb peak load (estimated 40–60 claims in a 2-hour morning window) without compressing analyst review time below the threshold needed for routing accuracy.</p>
+<h4 id="claimant-perspective">Claimant Perspective<a class="headerlink" href="#claimant-perspective" title="Permanent link">&para;</a></h4>
+<p>A claimant filing an FNOL expects three outcomes within the SLA window:</p>
+<ol>
+<li><strong>Confirmation</strong> that their claim has been received and is under review.</li>
+<li><strong>Assignment</strong> to an adjuster qualified for their specific loss type.</li>
+<li><strong>No re-contact burden</strong> — they should not need to re-explain their loss because of an internal routing error.</li>
+</ol>
+<p>A routing error forces the claimant to repeat their loss description to a second adjuster, extending time-to-first-contact by 2–4 hours. A SLA breach means the claimant receives no acknowledgement within the contracted window — the claim appears to have disappeared. Both failures are disproportionately felt on high-severity claims (e.g., total vehicle loss, house fire) where the claimant is in acute distress.</p>
+<hr />
+<h3 id="12-defined-terms">1.2 Defined Terms<a class="headerlink" href="#12-defined-terms" title="Permanent link">&para;</a></h3>
+<p>All ambiguous terms from the source specification are resolved below. These definitions govern interpretation throughout this document.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Precise Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>High-Value Claim</strong></td>
+<td>A claim where <code>claim_value &gt; HIGH_VALUE_THRESHOLD_USD</code> (default: <code>$10,000 USD</code>) <strong>OR</strong> <code>severity_score &gt; HIGH_SEVERITY_THRESHOLD</code> (default: <code>7</code> on a 1–10 scale). Both thresholds are environment-variable-driven. Either condition alone is sufficient to trigger high-priority routing. A claim valued at $9,999 with severity_score=8 is High-Value. A claim valued at $15,000 with severity_score=3 is also High-Value.</td>
+</tr>
+<tr>
+<td><strong>SLA Breach</strong></td>
+<td>Any claim where <code>acknowledged_at &gt; sla_deadline</code>, where <code>sla_deadline = created_at + SLA_WINDOW_SECONDS</code> (default: 7200). If <code>acknowledged_at</code> is null because the claim did not reach <code>ACKNOWLEDGED</code> state, it is counted as a breach at the moment <code>current_utc_time &gt; sla_deadline</code>.</td>
+</tr>
+<tr>
+<td><strong>Routing Error</strong></td>
+<td>A claim assigned to a <code>routing_target</code> that does not match the correct adjuster skill group for its <code>loss_type</code> and <code>severity_score</code>, as confirmed by post-routing audit. Operationally: a CRM transfer initiated by an adjuster within 24 hours of initial assignment is treated as a routing error.</td>
+</tr>
+<tr>
+<td><strong>FNOL</strong></td>
+<td>First Notice of Loss. The initial report submitted by a claimant or their representative immediately following an insured loss event. Not a coverage determination; not a proof of loss.</td>
+</tr>
+<tr>
+<td><strong>Acknowledgement</strong></td>
+<td>A system-generated notification to the claimant confirming that: (a) their claim has been received, (b) their policy has been validated as active and in-scope, and (c) their claim has been assigned to an adjuster. Acknowledgement is not a coverage determination, approval, or promise of payment.</td>
+</tr>
+<tr>
+<td><strong>Policy Active</strong></td>
+<td><code>policy.status = ACTIVE</code> <strong>AND</strong> <code>claim.date_of_loss &gt;= policy.policy_start_date</code> <strong>AND</strong> <code>claim.date_of_loss &lt;= policy.policy_end_date</code>. All three conditions must be true simultaneously. A policy with <code>status = ACTIVE</code> but a <code>date_of_loss</code> outside the effective window is not considered active for that claim.</td>
+</tr>
+<tr>
+<td><strong>Human Specialist</strong></td>
+<td>A licensed claims adjuster or senior claims examiner with authority to override agent routing, confirm or reverse <code>INVALID</code> determinations, and resolve <code>ESCALATED</code> claims. Not a general support agent. Not a supervisor unless designated.</td>
+</tr>
+<tr>
+<td><strong>Extraction Confidence</strong></td>
+<td>A <code>0.000–1.000</code> score produced by the NLP extraction step at triage, representing the agent's certainty that each extracted field (<code>severity_score</code>, <code>claim_value</code>, <code>loss_type</code>, <code>date_of_loss</code>, <code>policy_id</code>) is accurate. Computed as the mean confidence across all five fields. A score of <code>0.91</code> means the NLP model is 91% confident across all extracted fields collectively. Below <code>EXTRACTION_CONFIDENCE_THRESHOLD</code> (default: <code>0.75</code>), the agent must not proceed autonomously.</td>
+</tr>
+<tr>
+<td><strong>Duplicate Claim</strong></td>
+<td>A new payload where an existing <code>claim</code> record with identical <code>policy_id</code>, <code>date_of_loss</code>, and <code>loss_type</code> is already present in the system at state <code>TRIAGED</code> or later. A claim that was <code>WITHDRAWN</code> or <code>RETURNED</code> is excluded from duplicate matching.</td>
+</tr>
+<tr>
+<td><strong>Severity Score</strong></td>
+<td>An integer 1–10 produced by NLP extraction from the raw payload. The scale is: 1–3 = minor damage/inconvenience; 4–6 = moderate loss with repair required; 7–8 = significant loss requiring replacement; 9–10 = total loss or life-safety impact. The NLP model maps textual descriptors to this scale.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="13-success-metrics">1.3 Success Metrics<a class="headerlink" href="#13-success-metrics" title="Permanent link">&para;</a></h3>
+<p>Each metric is independently testable, maps to a specific system field or timestamp delta, and has a defined measurement method.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Metric</th>
+<th>Target</th>
+<th>Measurement Method</th>
+<th>Failure Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SM-01</td>
+<td>End-to-end SLA compliance</td>
+<td>p95 latency &lt; 7,200s</td>
+<td><code>acknowledged_at - created_at</code> per claim; report daily p50, p95, p99</td>
+<td>p95 &gt; 7,200s on any rolling 7-day window</td>
+</tr>
+<tr>
+<td>SM-02</td>
+<td>Routing accuracy on first assignment</td>
+<td>&gt; 98% correct</td>
+<td>Post-routing audit: flag any CRM adjuster transfer within 24h of initial assignment as a routing error; <code>(total_claims - transfer_count) / total_claims</code></td>
+<td>Routing error rate &gt; 2% on any 7-day rolling window</td>
+</tr>
+<tr>
+<td>SM-03</td>
+<td>SLA breach rate</td>
+<td>&lt; 2% of daily volume</td>
+<td><code>COUNT(claims WHERE acknowledged_at &gt; sla_deadline OR acknowledged_at IS NULL AND CURRENT_TIME &gt; sla_deadline) / COUNT(all_claims_that_day)</code></td>
+<td>Breach rate &gt; 2% on any single day</td>
+</tr>
+<tr>
+<td>SM-04</td>
+<td>SOAP resolution rate (no escalation)</td>
+<td>&gt; 97%</td>
+<td><code>COUNT(claims reaching VALIDATED without ESCALATED) / COUNT(all_claims)</code></td>
+<td>Rate &lt; 97% on any 7-day rolling window</td>
+</tr>
+<tr>
+<td>SM-05</td>
+<td>Human escalation rate (non-SOAP)</td>
+<td>&lt; 8% of daily volume</td>
+<td><code>COUNT(claims routed to HUMAN_REVIEW for reasons other than SOAP_EXHAUSTED) / COUNT(all_claims)</code></td>
+<td>Rate &gt; 8% on any 7-day rolling window</td>
+</tr>
+<tr>
+<td>SM-06</td>
+<td>Extraction confidence pass rate</td>
+<td>&gt; 92%</td>
+<td><code>COUNT(claims with extraction_confidence &gt;= 0.75) / COUNT(all_claims)</code></td>
+<td>Rate &lt; 92% on any 7-day rolling window</td>
+</tr>
+<tr>
+<td>SM-07</td>
+<td>Duplicate suppression accuracy</td>
+<td>0 duplicates reaching ROUTED</td>
+<td><code>COUNT(claims in ROUTED state matching a prior claim on policy_id + date_of_loss + loss_type)</code></td>
+<td>Any non-zero count</td>
+</tr>
+<tr>
+<td>SM-08</td>
+<td>Zero premature acknowledgements</td>
+<td>0</td>
+<td><code>COUNT(claims where acknowledged_at IS NOT NULL AND (validation_status != 'VALID' OR status != 'ROUTED'))</code></td>
+<td>Any non-zero count</td>
+</tr>
+<tr>
+<td>SM-09</td>
+<td>Agent reasoning completeness</td>
+<td>100% of TRIAGED claims</td>
+<td><code>COUNT(TRIAGED claims where agent_reasoning IS NULL OR agent_reasoning = '')</code></td>
+<td>Any non-zero count</td>
+</tr>
+<tr>
+<td>SM-10</td>
+<td>PII exposure in logs</td>
+<td>0 incidents</td>
+<td>Automated log scanner: flag any log line containing claimant_name, address, raw phone numbers, or full policy details</td>
+<td>Any flagged log line</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deliverable-2-delegation-matrix">Deliverable 2: Delegation Matrix<a class="headerlink" href="#deliverable-2-delegation-matrix" title="Permanent link">&para;</a></h2>
+<h3 id="21-delegation-matrix">2.1 Delegation Matrix<a class="headerlink" href="#21-delegation-matrix" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Level</th>
+<th>Agent Actions</th>
+<th>Human Actions</th>
+<th>Escalation Trigger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Payload Ingestion &amp; Dedup</strong></td>
+<td>Agent Alone</td>
+<td>Upload to DMS, query duplicate index, create <code>claim</code> record, set <code>sla_deadline</code>, write <code>raw_payload_url</code></td>
+<td>None (normal path)</td>
+<td>Duplicate detected; DMS upload fails</td>
+</tr>
+<tr>
+<td><strong>NLP Triage &amp; Field Extraction</strong></td>
+<td>Agent Alone</td>
+<td>Extract <code>severity_score</code>, <code>claim_value</code>, <code>loss_type</code>, <code>date_of_loss</code>, <code>policy_id</code>; compute <code>extraction_confidence</code>; write <code>agent_reasoning</code></td>
+<td>None (normal path)</td>
+<td><code>extraction_confidence &lt; EXTRACTION_CONFIDENCE_THRESHOLD</code></td>
+</tr>
+<tr>
+<td><strong>Policy Validation (SOAP)</strong></td>
+<td>Agent + Human Oversight</td>
+<td>Query <code>GetPolicyDetails</code>; evaluate Rules 4.1–4.5; set <code>validation_status</code>; write <code>policy_snapshot</code></td>
+<td>Confirm <code>INVALID</code> determinations; resolve <code>ESCALATED</code> claims</td>
+<td>SOAP exhaustion; <code>PolicyNotFound</code>; any <code>INVALID</code> outcome</td>
+</tr>
+<tr>
+<td><strong>Routing Decision</strong></td>
+<td>Agent + Human Oversight</td>
+<td>Apply routing rules; select <code>routing_target</code>; update CRM via PATCH; write <code>assigned_specialist_id</code></td>
+<td>Override <code>routing_target</code>; manually route <code>HUMAN_REVIEW</code> claims; assign specialist for high-priority claims</td>
+<td>High-value/severity trigger; <code>INVALID</code> policy; CRM failure; <code>loss_type = OTHER</code></td>
+</tr>
+<tr>
+<td><strong>Claimant Acknowledgement</strong></td>
+<td>Agent Alone</td>
+<td>Notify claimant; set <code>acknowledged_at</code></td>
+<td>None</td>
+<td>Any condition preventing <code>VALID + ROUTED</code> confirmation</td>
+</tr>
+<tr>
+<td><strong>Escalation Resolution</strong></td>
+<td>Human Only</td>
+<td>None</td>
+<td>Resolve <code>ESCALATED</code> claims; confirm or reverse <code>INVALID</code>; override routing; update CRM manually</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Delegation Levels defined:</strong>
+- <strong>Agent Alone:</strong> Agent executes without human approval; outcome is logged for audit but not pended for review.
+- <strong>Agent + Human Oversight:</strong> Agent executes and writes output; any exception or Redline condition blocks the pipeline and routes to a human specialist. Agent output for this function is always auditable and reversible.
+- <strong>Human Only:</strong> The agent produces no output for this function. It provides context (claim_id, sla_deadline, human_review_reason) to the specialist queue and waits.</p>
+<hr />
+<h3 id="22-redline-conditions">2.2 Redline Conditions<a class="headerlink" href="#22-redline-conditions" title="Permanent link">&para;</a></h3>
+<p>The <strong>Redline</strong> is the exact set of conditions at which the agent must immediately halt autonomous pipeline progression, write a populated <code>human_review_reason</code>, route to the appropriate exception queue, and synchronously notify the human specialist queue. The agent must not proceed past any Redline condition without an explicit human action.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Condition</th>
+<th>Exact Check</th>
+<th>Agent Action</th>
+<th>Human Required Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RL-01</td>
+<td>Low extraction confidence</td>
+<td><code>extraction_confidence &lt; EXTRACTION_CONFIDENCE_THRESHOLD</code></td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code>; populate <code>human_review_reason = "LOW_EXTRACTION_CONFIDENCE: score={score} below threshold={threshold}"</code>; do not write extracted fields; notify specialist queue</td>
+<td>Manually extract fields; re-submit claim for triage</td>
+</tr>
+<tr>
+<td>RL-02</td>
+<td>SOAP retry exhaustion</td>
+<td><code>retry_count &gt;= MAX_SOAP_RETRIES</code></td>
+<td>Set <code>status = ESCALATED</code>; set <code>routing_target = SOAP_ESCALATION_QUEUE</code>; populate <code>human_review_reason = "SOAP_EXHAUSTED: {retry_count} timeouts for policy_id={policy_id}"</code>; notify specialist queue synchronously</td>
+<td>Validate policy manually; update <code>validation_status</code> and <code>policy_snapshot</code> via admin interface</td>
+</tr>
+<tr>
+<td>RL-03</td>
+<td>Policy validation failed</td>
+<td><code>validation_status = INVALID</code> for any reason</td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code>; populate <code>human_review_reason</code> with the specific failed rule ID and values; do not route to any adjuster queue; notify specialist queue</td>
+<td>Confirm or reverse the <code>INVALID</code> determination; document decision in <code>reviewer_notes</code></td>
+</tr>
+<tr>
+<td>RL-04</td>
+<td>High-value or high-severity</td>
+<td><code>severity_score &gt; HIGH_SEVERITY_THRESHOLD</code> OR <code>claim_value &gt; HIGH_VALUE_THRESHOLD_USD</code></td>
+<td>Set <code>routing_target = HUMAN_ADJUSTER_HIGH_PRIORITY</code>; notify priority adjuster queue immediately</td>
+<td>Senior adjuster must acknowledge assignment within 30 minutes</td>
+</tr>
+<tr>
+<td>RL-05</td>
+<td>CRM update failure</td>
+<td>CRM PATCH returns 4xx or 5xx on all attempts</td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code>; populate <code>human_review_reason = "CRM_UPDATE_FAILED: HTTP {status_code}"</code>; include intended routing_target in reason; notify specialist queue</td>
+<td>Manually update CRM with the intended routing_target</td>
+</tr>
+<tr>
+<td>RL-06</td>
+<td>Duplicate claim detected</td>
+<td>Existing claim found on <code>(policy_id, date_of_loss, loss_type)</code> with status not in <code>{RECEIVED, WITHDRAWN}</code></td>
+<td>Do not create second claim record; log <code>DUPLICATE_DETECTED: new_payload matches claim_id={existing_id}</code>; notify specialist queue</td>
+<td>Confirm merge, reject duplicate, or authorize new claim</td>
+</tr>
+<tr>
+<td>RL-07</td>
+<td>Unclassified loss type</td>
+<td><code>loss_type = OTHER</code></td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code>; populate <code>human_review_reason = "UNCLASSIFIED_LOSS_TYPE: loss_type=OTHER requires manual classification"</code></td>
+<td>Reclassify <code>loss_type</code>; re-trigger routing step</td>
+</tr>
+<tr>
+<td>RL-08</td>
+<td>SLA deadline exceeded</td>
+<td><code>current_utc_time &gt; sla_deadline</code> at any pipeline step</td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code> if not already routed to a higher queue; populate <code>human_review_reason = "SLA_BREACH: deadline={sla_deadline} exceeded at step={current_status}"</code>; notify supervisor queue synchronously</td>
+<td>Acknowledge breach; expedite claim disposition</td>
+</tr>
+<tr>
+<td>RL-09</td>
+<td>Payload integrity failure</td>
+<td>DMS upload returns non-201; virus scan fails; payload is empty</td>
+<td>Halt ingestion; do not create claim record; return structured error to ingestion caller; log <code>INGESTION_FAILURE: source_type={source_type}, error={error_code}</code></td>
+<td>Re-submit clean payload</td>
+</tr>
+<tr>
+<td>RL-10</td>
+<td>SOAP <code>AuthenticationFailed</code></td>
+<td>SOAP fault code = <code>AuthenticationFailed</code></td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code>; notify operations team (not specialist queue); log <code>SOAP_AUTH_FAILURE: claim_id={claim_id}</code> (no credentials in log)</td>
+<td>Operations team to rotate/verify SOAP credentials; re-trigger validation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deliverable-3-agent-specification-system-design">Deliverable 3: Agent Specification (System Design)<a class="headerlink" href="#deliverable-3-agent-specification-system-design" title="Permanent link">&para;</a></h2>
+<h3 id="31-entity-definitions">3.1 Entity Definitions<a class="headerlink" href="#31-entity-definitions" title="Permanent link">&para;</a></h3>
+<h4 id="311-claim">3.1.1 <code>claim</code><a class="headerlink" href="#311-claim" title="Permanent link">&para;</a></h4>
+<p>Primary entity. Represents one FNOL submission from ingestion through acknowledgement.</p>
+<pre><code>claim_id                  UUID              PK; UUIDv4; system-generated at ingestion; immutable
+source_type               SOURCE_TYPE       Channel of ingestion; set at creation; immutable
+raw_payload_url           VARCHAR(2048)     DMS document URL; write-once at ingestion; immutable
+severity_score            SMALLINT          1–10; null until TRIAGED; extracted by NLP
+policy_id                 VARCHAR(64)       Extracted by NLP; SOAP query key; null until TRIAGED
+claim_value               NUMERIC(12,2)     USD; null until TRIAGED; extracted or estimated by NLP
+loss_type                 LOSS_TYPE         null until TRIAGED; extracted by NLP
+date_of_loss              DATE              ISO 8601; null until TRIAGED; extracted by NLP
+validation_status         VALIDATION_STATUS default PENDING; set to VALID or INVALID at VALIDATED step
+routing_target            ROUTING_TARGET    null until validation step completes
+sla_deadline              TIMESTAMPTZ       created_at + INTERVAL SLA_WINDOW_SECONDS; computed at creation
+status                    CLAIM_STATUS      State machine position; default RECEIVED
+policy_snapshot           JSONB             Write-once; copy of SOAP response at validation time; null until VALIDATED
+agent_reasoning           TEXT              Write-once; NLP extraction rationale; null until TRIAGED
+extraction_confidence     NUMERIC(4,3)      0.000–1.000; null until TRIAGED; computed by NLP step
+retry_count               SMALLINT          SOAP retry counter; default 0; ceiling: MAX_SOAP_RETRIES
+assigned_specialist_id    VARCHAR(64)       CRM adjuster ID; null until ROUTED; from CRM PATCH response
+human_review_reason       TEXT              Required when routing_target IN (HUMAN_REVIEW, SOAP_ESCALATION_QUEUE)
+acknowledged_at           TIMESTAMPTZ       System-set after VALID + ROUTED confirmed; null until then
+created_at                TIMESTAMPTZ       System-set at ingestion; immutable; never client-supplied
+updated_at                TIMESTAMPTZ       System-set on every write; never client-supplied
+</code></pre>
+<p><strong>Constraints:</strong>
+- <code>claim_id</code> must be unique across all records.
+- <code>agent_reasoning</code>, <code>raw_payload_url</code>, <code>policy_snapshot</code> are write-once; any update attempt must be rejected with a constraint violation, not silently ignored.
+- <code>acknowledged_at</code> may not be set unless <code>validation_status = VALID</code> AND <code>status = ROUTED</code>.
+- <code>human_review_reason</code> must be non-null and non-empty whenever <code>routing_target IN (HUMAN_REVIEW, SOAP_ESCALATION_QUEUE)</code>.</p>
+<hr />
+<p><strong>Enum: <code>SOURCE_TYPE</code></strong></p>
+<pre><code>EMAIL    -- Parsed from structured email; sender address and subject extracted
+PHONE    -- Transcribed from call recording or IVR transcript
+WEB      -- Submitted via web form; semi-structured JSON input expected
+</code></pre>
+<p><strong>Enum: <code>LOSS_TYPE</code></strong></p>
+<pre><code>AUTO         -- Motor vehicle loss (collision, theft, weather damage)
+PROPERTY     -- Residential or commercial property damage
+LIABILITY    -- Third-party liability claim
+MEDICAL      -- Personal injury / medical payments claim
+OTHER        -- Unclassified; always routes to HUMAN_REVIEW
+</code></pre>
+<p><strong>Enum: <code>VALIDATION_STATUS</code></strong></p>
+<pre><code>PENDING    -- Default at claim creation; no SOAP query completed yet
+VALID      -- All Rules 4.1–4.5 passed; claim is eligible for adjuster routing
+INVALID    -- One or more coverage rules failed; requires human confirmation before final determination
+</code></pre>
+<p><strong>Enum: <code>ROUTING_TARGET</code></strong></p>
+<pre><code>AUTO_ADJUSTER_STANDARD               -- Standard AUTO loss; claim_value &lt;= 10000 AND severity_score &lt;= 7
+AUTO_ADJUSTER_HIGH_PRIORITY          -- HIGH-VALUE AUTO loss
+PROPERTY_ADJUSTER_STANDARD           -- Standard PROPERTY loss
+PROPERTY_ADJUSTER_HIGH_PRIORITY      -- HIGH-VALUE PROPERTY loss
+LIABILITY_ADJUSTER_STANDARD          -- Standard LIABILITY loss
+LIABILITY_ADJUSTER_HIGH_PRIORITY     -- HIGH-VALUE LIABILITY loss
+MEDICAL_ADJUSTER_STANDARD            -- Standard MEDICAL loss
+MEDICAL_ADJUSTER_HIGH_PRIORITY       -- HIGH-VALUE MEDICAL loss
+HUMAN_ADJUSTER_HIGH_PRIORITY         -- High-value/severity; any loss_type; mandatory escalation
+HUMAN_REVIEW                         -- INVALID policy, low confidence, CRM failure, unclassified loss_type
+SOAP_ESCALATION_QUEUE                -- SOAP retry budget exhausted; policy unvalidated
+</code></pre>
+<p><strong>Enum: <code>CLAIM_STATUS</code></strong></p>
+<pre><code>RECEIVED       -- Payload ingested; claim record created; sla_deadline set
+TRIAGED        -- NLP extraction complete; agent_reasoning written
+VALIDATED      -- SOAP query complete; policy_snapshot written; validation_status set
+ROUTED         -- routing_target set; CRM updated; assigned_specialist_id written
+ACKNOWLEDGED   -- Claimant notified; acknowledged_at set
+ESCALATED      -- SOAP retry budget exhausted; requires human specialist resolution
+</code></pre>
+<hr />
+<h4 id="312-policy-soap-response-snapshot">3.1.2 <code>policy</code> (SOAP Response Snapshot)<a class="headerlink" href="#312-policy-soap-response-snapshot" title="Permanent link">&para;</a></h4>
+<p>Not stored as a standalone table. Persisted exclusively as a JSONB snapshot in <code>claim.policy_snapshot</code> at validation time. The snapshot is write-once and immutable.</p>
+<pre><code class="language-json">{
+  &quot;policy_id&quot;:           &quot;string — matches claim.policy_id&quot;,
+  &quot;status&quot;:              &quot;ACTIVE | LAPSED | CANCELLED | PENDING&quot;,
+  &quot;coverage_limit&quot;:      &quot;decimal — USD; maximum covered claim value&quot;,
+  &quot;policy_start_date&quot;:   &quot;string — ISO 8601 date (YYYY-MM-DD)&quot;,
+  &quot;policy_end_date&quot;:     &quot;string — ISO 8601 date (YYYY-MM-DD)&quot;,
+  &quot;covered_loss_types&quot;:  [&quot;AUTO&quot;, &quot;PROPERTY&quot;, ...],
+  &quot;soap_retrieved_at&quot;:   &quot;string — ISO 8601 datetime UTC; when the SOAP call returned&quot;
+}
+</code></pre>
+<p><strong>Enum: <code>POLICY_STATUS</code></strong></p>
+<pre><code>ACTIVE      -- Policy is in force; coverage is current
+LAPSED      -- Policy expired without renewal; claims against it are INVALID
+CANCELLED   -- Policy terminated mid-term; claims against it are INVALID
+PENDING     -- Policy issued but not yet effective; claims against it are INVALID
+</code></pre>
+<p><strong>Validation Notes:</strong>
+- Only <code>ACTIVE</code> policies satisfy Rule 4.2. All other <code>POLICY_STATUS</code> values result in <code>validation_status = INVALID</code>.
+- <code>soap_retrieved_at</code> is system-set at snapshot write time and is used to detect stale snapshots in any re-evaluation workflow.</p>
+<hr />
+<h4 id="313-adjuster">3.1.3 <code>adjuster</code><a class="headerlink" href="#313-adjuster" title="Permanent link">&para;</a></h4>
+<p>Not stored locally. Retrieved from CRM during the routing step to confirm the target specialist is active and under workload cap. The sole field written to the claim record is <code>assigned_specialist_id</code>.</p>
+<pre><code>specialist_id             VARCHAR(64)     CRM identifier; written to claim.assigned_specialist_id on ROUTED
+full_name                 VARCHAR(256)    Used in audit log entries only; excluded from all aggregated logs
+skill_group               ROUTING_TARGET  The queue this adjuster belongs to in CRM
+active                    BOOLEAN         Agent must not assign to an adjuster where active = false
+current_load              INTEGER         Open claim count; sourced from CRM response
+max_load                  INTEGER         Agent must not assign if current_load &gt;= max_load
+licensed_jurisdictions    VARCHAR[]       ISO 3166-2 codes; agent must verify jurisdiction match before assignment
+</code></pre>
+<p><strong>Assignment Rules:</strong>
+- Agent queries CRM for available adjusters in the target <code>skill_group</code>.
+- Agent selects the adjuster with the lowest <code>current_load</code> that is <code>active = true</code> and <code>current_load &lt; max_load</code>.
+- If no eligible adjuster is available in the target <code>skill_group</code>, agent sets <code>routing_target = HUMAN_ADJUSTER_HIGH_PRIORITY</code> and notifies the supervisor queue.
+- Jurisdiction match is required: the adjuster's <code>licensed_jurisdictions</code> must include the jurisdiction inferred from the claim's originating address or policy metadata.</p>
+<hr />
+<h3 id="32-state-machine">3.2 State Machine<a class="headerlink" href="#32-state-machine" title="Permanent link">&para;</a></h3>
+<h4 id="state-transition-table">State Transition Table<a class="headerlink" href="#state-transition-table" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Trigger</th>
+<th>Pre-Conditions</th>
+<th>Agent Actions</th>
+<th>Definition of Done</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td><code>RECEIVED</code></td>
+<td>Payload arrives at ingestion endpoint</td>
+<td>DMS upload returns 201; no duplicate detected on <code>(policy_id, date_of_loss, loss_type)</code>; payload passes integrity check</td>
+<td>Create claim record; compute <code>sla_deadline</code>; write <code>raw_payload_url</code>; set <code>status = RECEIVED</code></td>
+<td><code>claim_id</code> non-null; <code>created_at</code> set; <code>raw_payload_url</code> non-null; <code>sla_deadline</code> computed and non-null; <code>status = RECEIVED</code></td>
+</tr>
+<tr>
+<td><code>RECEIVED</code></td>
+<td><code>TRIAGED</code></td>
+<td>Agent completes NLP extraction above confidence threshold</td>
+<td><code>extraction_confidence &gt;= EXTRACTION_CONFIDENCE_THRESHOLD</code></td>
+<td>Write <code>severity_score</code>, <code>claim_value</code>, <code>loss_type</code>, <code>date_of_loss</code>, <code>policy_id</code>, <code>agent_reasoning</code>, <code>extraction_confidence</code>; set <code>status = TRIAGED</code></td>
+<td>All five extracted fields non-null; <code>agent_reasoning</code> written; <code>extraction_confidence</code> recorded; all fields written atomically (all-or-nothing)</td>
+</tr>
+<tr>
+<td><code>RECEIVED</code></td>
+<td>Blocked at <code>TRIAGED</code></td>
+<td><code>extraction_confidence &lt; EXTRACTION_CONFIDENCE_THRESHOLD</code></td>
+<td>—</td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code>; write <code>human_review_reason</code>; notify specialist queue; set <code>status = TRIAGED</code></td>
+<td><code>routing_target = HUMAN_REVIEW</code>; <code>human_review_reason</code> non-null; specialist queue notified; no NLP fields written</td>
+</tr>
+<tr>
+<td><code>TRIAGED</code></td>
+<td><code>VALIDATED</code></td>
+<td>SOAP <code>GetPolicyDetails</code> returns successfully</td>
+<td>SOAP response received within <code>MAX_SOAP_RETRIES</code> attempts</td>
+<td>Evaluate Rules 4.2–4.5; set <code>validation_status</code>; write <code>policy_snapshot</code>; set <code>status = VALIDATED</code></td>
+<td><code>policy_snapshot</code> non-null; <code>validation_status</code> in {VALID, INVALID}; all five rules evaluated and logged</td>
+</tr>
+<tr>
+<td><code>TRIAGED</code></td>
+<td><code>ESCALATED</code></td>
+<td><code>retry_count &gt;= MAX_SOAP_RETRIES</code></td>
+<td>—</td>
+<td>Set <code>status = ESCALATED</code>; set <code>routing_target = SOAP_ESCALATION_QUEUE</code>; write <code>human_review_reason</code>; notify specialist queue synchronously</td>
+<td><code>status = ESCALATED</code>; <code>routing_target = SOAP_ESCALATION_QUEUE</code>; specialist queue notified; <code>human_review_reason</code> non-null</td>
+</tr>
+<tr>
+<td><code>VALIDATED</code></td>
+<td><code>ROUTED</code></td>
+<td><code>validation_status = VALID</code>; routing rules applied; CRM PATCH returns 200</td>
+<td>No Redline conditions active</td>
+<td>Set <code>routing_target</code>; send <code>PATCH /claims/{claim_id}</code> to CRM; write <code>assigned_specialist_id</code> from CRM response; set <code>status = ROUTED</code></td>
+<td><code>routing_target</code> non-null; CRM confirmed 200; <code>assigned_specialist_id</code> non-null; <code>status = ROUTED</code></td>
+</tr>
+<tr>
+<td><code>VALIDATED</code></td>
+<td>Blocked at <code>VALIDATED</code></td>
+<td><code>validation_status = INVALID</code></td>
+<td>—</td>
+<td>Set <code>routing_target = HUMAN_REVIEW</code>; write <code>human_review_reason</code>; notify specialist queue; do not advance <code>status</code></td>
+<td><code>routing_target = HUMAN_REVIEW</code>; <code>human_review_reason</code> cites specific failed rule; no adjuster assigned</td>
+</tr>
+<tr>
+<td><code>ROUTED</code></td>
+<td><code>ACKNOWLEDGED</code></td>
+<td><code>validation_status = VALID</code> AND <code>status = ROUTED</code> confirmed</td>
+<td><code>routing_target</code> non-null; <code>assigned_specialist_id</code> non-null</td>
+<td>Notify claimant via notification service; set <code>acknowledged_at = current_utc_time</code>; set <code>status = ACKNOWLEDGED</code></td>
+<td><code>acknowledged_at</code> non-null; <code>acknowledged_at &lt;= sla_deadline</code>; claimant notification sent and confirmed</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="33-integration-contracts">3.3 Integration Contracts<a class="headerlink" href="#33-integration-contracts" title="Permanent link">&para;</a></h3>
+<h4 id="331-crm-rest-api">3.3.1 CRM — REST API<a class="headerlink" href="#331-crm-rest-api" title="Permanent link">&para;</a></h4>
+<p><strong>Endpoint:</strong> <code>PATCH {CRM_BASE_URL}/claims/{claim_id}</code>
+<strong>Auth:</strong> <code>Authorization: Bearer {CRM_API_TOKEN}</code>
+<strong>Content-Type:</strong> <code>application/json</code>
+<strong>Timeout per attempt:</strong> <code>CRM_REQUEST_TIMEOUT_SECONDS</code> (default: 10)</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;claim_id&quot;:                &quot;string (UUID)&quot;,
+  &quot;routing_target&quot;:          &quot;string (ROUTING_TARGET enum value)&quot;,
+  &quot;assigned_specialist_id&quot;:  &quot;string | null&quot;,
+  &quot;status&quot;:                  &quot;ROUTED&quot;,
+  &quot;sla_deadline&quot;:            &quot;string (ISO 8601 datetime with UTC offset)&quot;
+}
+</code></pre>
+<p><strong>Success Response: <code>200 OK</code></strong></p>
+<pre><code class="language-json">{
+  &quot;claim_id&quot;:                &quot;string (UUID)&quot;,
+  &quot;assigned_specialist_id&quot;:  &quot;string&quot;,
+  &quot;updated_at&quot;:              &quot;string (ISO 8601 datetime)&quot;
+}
+</code></pre>
+<p>Agent writes <code>assigned_specialist_id</code> from response body to <code>claim.assigned_specialist_id</code>. If <code>assigned_specialist_id</code> is absent from the response, agent sets <code>routing_target = HUMAN_REVIEW</code> with <code>human_review_reason = "CRM_RESPONSE_MISSING_SPECIALIST_ID"</code>.</p>
+<p><strong>Failure Handling:</strong></p>
+<table>
+<thead>
+<tr>
+<th>HTTP Status</th>
+<th>Retry</th>
+<th>Agent Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>400 Bad Request</code></td>
+<td>No</td>
+<td>Log <code>claim_id</code> + <code>400</code>; set <code>routing_target = HUMAN_REVIEW</code>; <code>human_review_reason = "CRM_UPDATE_FAILED: HTTP 400 — malformed payload"</code>; notify specialist queue</td>
+</tr>
+<tr>
+<td><code>401 Unauthorized</code></td>
+<td>No</td>
+<td>Log <code>claim_id</code> + <code>401</code>; notify operations team; set <code>routing_target = HUMAN_REVIEW</code>; <code>human_review_reason = "CRM_UPDATE_FAILED: HTTP 401 — auth failure"</code></td>
+</tr>
+<tr>
+<td><code>404 Not Found</code></td>
+<td>No</td>
+<td>Log <code>claim_id</code> + <code>404</code>; set <code>routing_target = HUMAN_REVIEW</code>; <code>human_review_reason = "CRM_UPDATE_FAILED: HTTP 404 — claim_id not found in CRM"</code></td>
+</tr>
+<tr>
+<td><code>429 Rate Limited</code></td>
+<td>Yes — wait <code>Retry-After</code> header value, then retry once</td>
+<td>If second attempt fails, set <code>routing_target = HUMAN_REVIEW</code>; <code>human_review_reason = "CRM_UPDATE_FAILED: HTTP 429 after retry"</code></td>
+</tr>
+<tr>
+<td><code>500 Internal Server Error</code></td>
+<td>Yes — wait <code>CRM_RETRY_BACKOFF_SECONDS</code>, then retry once</td>
+<td>If second attempt fails, set <code>routing_target = HUMAN_REVIEW</code>; <code>human_review_reason = "CRM_UPDATE_FAILED: HTTP 500 after retry"</code>; include intended <code>routing_target</code> in reason</td>
+</tr>
+<tr>
+<td>Connection timeout</td>
+<td>Treat as 500</td>
+<td>Same retry-then-escalate behavior</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="332-policy-system-soap">3.3.2 Policy System — SOAP<a class="headerlink" href="#332-policy-system-soap" title="Permanent link">&para;</a></h4>
+<p><strong>Operation:</strong> <code>GetPolicyDetails</code>
+<strong>WSDL:</strong> <code>{SOAP_WSDL_URL}</code>
+<strong>Auth:</strong> HTTP Basic — <code>SOAP_USERNAME</code> / <code>SOAP_PASSWORD</code>
+<strong>Timeout per attempt:</strong> <code>SOAP_REQUEST_TIMEOUT_SECONDS</code> (default: 8)</p>
+<p><strong>Request Envelope:</strong></p>
+<pre><code class="language-xml">&lt;soapenv:Envelope
+    xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;
+    xmlns:pol=&quot;http://legacy.insurer.internal/policy&quot;&gt;
+  &lt;soapenv:Body&gt;
+    &lt;pol:GetPolicyDetails&gt;
+      &lt;pol:PolicyId&gt;{policy_id}&lt;/pol:PolicyId&gt;
+    &lt;/pol:GetPolicyDetails&gt;
+  &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+</code></pre>
+<p><strong>Success Response — Fields Consumed:</strong></p>
+<pre><code class="language-xml">&lt;PolicyId&gt;string&lt;/PolicyId&gt;
+&lt;Status&gt;ACTIVE | LAPSED | CANCELLED | PENDING&lt;/Status&gt;
+&lt;CoverageLimit&gt;decimal&lt;/CoverageLimit&gt;
+&lt;PolicyStartDate&gt;YYYY-MM-DD&lt;/PolicyStartDate&gt;
+&lt;PolicyEndDate&gt;YYYY-MM-DD&lt;/PolicyEndDate&gt;
+&lt;CoveredLossTypes&gt;
+  &lt;LossType&gt;AUTO | PROPERTY | LIABILITY | MEDICAL | OTHER&lt;/LossType&gt;
+&lt;/CoveredLossTypes&gt;
+</code></pre>
+<p><strong>Retry Algorithm (pseudocode):</strong></p>
+<pre><code class="language-python">retry_count = 0
+
+while retry_count &lt; MAX_SOAP_RETRIES:
+    response = soap_client.call(
+        operation=&quot;GetPolicyDetails&quot;,
+        policy_id=claim.policy_id,
+        timeout=SOAP_REQUEST_TIMEOUT_SECONDS
+    )
+
+    if response.success:
+        write_policy_snapshot(claim, response)   # write-once
+        evaluate_validation_rules(claim)
+        break
+
+    if response.fault_code == &quot;PolicyNotFound&quot;:
+        # Not a transient error; do not retry
+        claim.validation_status = INVALID
+        claim.human_review_reason = f&quot;POLICY_NOT_FOUND: policy_id={claim.policy_id}&quot;
+        claim.routing_target = HUMAN_REVIEW
+        notify_specialist_queue(claim.claim_id)
+        break
+
+    if response.fault_code == &quot;AuthenticationFailed&quot;:
+        # Credential issue; retrying will not help
+        claim.routing_target = HUMAN_REVIEW
+        claim.human_review_reason = f&quot;SOAP_AUTH_FAILURE: claim_id={claim.claim_id}&quot;
+        notify_operations_team(claim.claim_id)   # not specialist queue
+        break
+
+    # Transient error (timeout, ServiceUnavailable, malformed response)
+    retry_count += 1
+    claim.retry_count = retry_count
+
+    if retry_count &gt;= MAX_SOAP_RETRIES:
+        claim.status = ESCALATED
+        claim.routing_target = SOAP_ESCALATION_QUEUE
+        claim.human_review_reason = f&quot;SOAP_EXHAUSTED: {retry_count} failures for policy_id={claim.policy_id}&quot;
+        notify_specialist_queue(claim.claim_id)  # synchronous
+        break
+
+    backoff_seconds = SOAP_RETRY_BACKOFF_SECONDS * (retry_count ** 2)
+    wait(backoff_seconds)
+</code></pre>
+<p><strong>Backoff Schedule (with defaults <code>MAX_SOAP_RETRIES=3</code>, <code>SOAP_RETRY_BACKOFF_SECONDS=2</code>):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Attempt</th>
+<th>Wait Before Next Attempt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 fails</td>
+<td><code>2 * (1^2)</code> = 2 seconds</td>
+</tr>
+<tr>
+<td>2 fails</td>
+<td><code>2 * (2^2)</code> = 8 seconds</td>
+</tr>
+<tr>
+<td>3 fails</td>
+<td>Escalate — no further wait</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total time before escalation:</strong> ~26 seconds (8s × 3 timeouts + 10s backoff). This is within the 7,200s SLA window.</p>
+<hr />
+<h4 id="333-document-management-system-dms">3.3.3 Document Management System (DMS)<a class="headerlink" href="#333-document-management-system-dms" title="Permanent link">&para;</a></h4>
+<p><strong>Upload (at ingestion):</strong>
+- <strong>Endpoint:</strong> <code>POST {DMS_BASE_URL}/documents</code>
+- <strong>Auth:</strong> <code>Authorization: Bearer {DMS_API_TOKEN}</code>
+- <strong>Content-Type:</strong> <code>multipart/form-data</code>
+- <strong>Body fields:</strong>
+  - <code>file</code>: raw payload (email body, phone transcript text, or web form submission)
+  - <code>metadata</code>: <code>{ "source_type": "EMAIL|PHONE|WEB", "ingested_at": "&lt;ISO 8601 UTC&gt;" }</code>
+  - Note: <code>claim_id</code> is NOT included — the claim record does not yet exist at upload time
+- <strong>Success:</strong> <code>201 Created</code> → extract <code>document_url</code> from response body → write to <code>claim.raw_payload_url</code> (write-once)
+- <strong>Failure:</strong> Halt ingestion; do not create claim record; return structured error to ingestion caller: <code>{ "error": "DMS_UPLOAD_FAILED", "status_code": N, "source_type": "...", "received_at": "&lt;ISO 8601&gt;" }</code></p>
+<p><strong>Retrieval (human reviewers only):</strong>
+- <strong>Endpoint:</strong> <code>GET {DMS_BASE_URL}/documents/{document_id}</code>
+- <strong>Auth:</strong> Same bearer token
+- The agent does not call this endpoint after ingestion. <code>raw_payload_url</code> is stored for human review access only. The agent operates exclusively on extracted fields written to the <code>claim</code> record.</p>
+<hr />
+<h2 id="deliverable-4-validation-design-the-anti-hallucination-layer">Deliverable 4: Validation Design (The Anti-Hallucination Layer)<a class="headerlink" href="#deliverable-4-validation-design-the-anti-hallucination-layer" title="Permanent link">&para;</a></h2>
+<h3 id="41-happy-path-end-to-end-trace">4.1 Happy Path — End-to-End Trace<a class="headerlink" href="#41-happy-path-end-to-end-trace" title="Permanent link">&para;</a></h3>
+<p><strong>Scenario:</strong>
+- Channel: email
+- Loss type: AUTO
+- Claim value: $4,500
+- Severity score: 5
+- Policy: ACTIVE; coverage_limit = $50,000; covers AUTO; effective 2026-01-01 to 2026-12-31
+- Date of loss: 2026-04-20
+- Ingestion time: 09:00:00 UTC</p>
+<table>
+<thead>
+<tr>
+<th>Timestamp (UTC)</th>
+<th>Step</th>
+<th>Agent Action</th>
+<th>Resulting State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09:00:00</td>
+<td>Email arrives at ingestion endpoint</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:01</td>
+<td>DMS upload</td>
+<td>Agent sends <code>POST /documents</code> with raw email; DMS returns <code>201</code> with <code>document_url="dms://docs/abc123"</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:01</td>
+<td>Claim creation</td>
+<td>Agent creates claim: <code>status=RECEIVED</code>, <code>source_type=EMAIL</code>, <code>raw_payload_url="dms://docs/abc123"</code>, <code>sla_deadline=11:00:00 UTC</code></td>
+<td><code>RECEIVED</code></td>
+</tr>
+<tr>
+<td>09:00:01</td>
+<td>Duplicate check</td>
+<td>Agent queries: no match on <code>(policy_id=null, date_of_loss=null, loss_type=null)</code> — fields not yet extracted; check deferred to post-TRIAGED step</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:02</td>
+<td>NLP extraction</td>
+<td>Agent extracts: <code>severity_score=5</code>, <code>claim_value=4500.00</code>, <code>loss_type=AUTO</code>, <code>date_of_loss=2026-04-20</code>, <code>policy_id="POL-12345"</code>, <code>extraction_confidence=0.91</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:02</td>
+<td>Duplicate check (post-extraction)</td>
+<td>Agent queries: no existing claim on <code>(POL-12345, 2026-04-20, AUTO)</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:02</td>
+<td>Write triage output</td>
+<td>Agent writes <code>agent_reasoning</code> (write-once); sets <code>status=TRIAGED</code></td>
+<td><code>TRIAGED</code></td>
+</tr>
+<tr>
+<td>09:00:02</td>
+<td>SOAP query initiated</td>
+<td>Agent sends <code>GetPolicyDetails(PolicyId="POL-12345")</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>SOAP response received</td>
+<td>Agent receives policy: <code>status=ACTIVE</code>, <code>coverage_limit=50000</code>, <code>start=2026-01-01</code>, <code>end=2026-12-31</code>, <code>covered=[AUTO, PROPERTY]</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>Rule 4.1 evaluation</td>
+<td><code>severity_score=5 &lt;= 7</code> AND <code>claim_value=4500 &lt;= 10000</code> → high-priority rule does NOT trigger</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>Rule 4.2 evaluation</td>
+<td><code>policy.status=ACTIVE</code> → pass</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>Rule 4.3 evaluation</td>
+<td><code>date_of_loss=2026-04-20</code> is within <code>[2026-01-01, 2026-12-31]</code> → pass</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>Rule 4.4 evaluation</td>
+<td><code>claim_value=4500 &lt; coverage_limit=50000</code> → pass</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>Rule 4.5 evaluation</td>
+<td><code>loss_type=AUTO</code> IN <code>[AUTO, PROPERTY]</code> → pass</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>Write validation output</td>
+<td>Agent sets <code>validation_status=VALID</code>; writes <code>policy_snapshot</code> (write-once); sets <code>status=VALIDATED</code></td>
+<td><code>VALIDATED</code></td>
+</tr>
+<tr>
+<td>09:00:03</td>
+<td>Routing decision</td>
+<td>All rules passed; <code>severity_score=5 &lt;= 7</code>, <code>claim_value=4500 &lt;= 10000</code> → standard routing; <code>loss_type=AUTO</code> → <code>routing_target=AUTO_ADJUSTER_STANDARD</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:04</td>
+<td>CRM update</td>
+<td>Agent sends <code>PATCH /claims/{claim_id}</code> with <code>routing_target=AUTO_ADJUSTER_STANDARD</code>, <code>status=ROUTED</code>, <code>sla_deadline=11:00:00 UTC</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:04</td>
+<td>CRM response</td>
+<td>CRM returns <code>200 OK</code> with <code>assigned_specialist_id="ADJ-9981"</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:04</td>
+<td>Write routing output</td>
+<td>Agent writes <code>assigned_specialist_id="ADJ-9981"</code>; sets <code>status=ROUTED</code></td>
+<td><code>ROUTED</code></td>
+</tr>
+<tr>
+<td>09:00:05</td>
+<td>Acknowledgement gate</td>
+<td>Check: <code>validation_status=VALID</code> ✓ AND <code>status=ROUTED</code> ✓ AND <code>routing_target</code> non-null ✓ → gate passes</td>
+<td>—</td>
+</tr>
+<tr>
+<td>09:00:05</td>
+<td>Claimant notification</td>
+<td>Agent notifies claimant via notification service; sets <code>acknowledged_at=09:00:05 UTC</code>; sets <code>status=ACKNOWLEDGED</code></td>
+<td><code>ACKNOWLEDGED</code></td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td><code>acknowledged_at=09:00:05</code> vs <code>sla_deadline=11:00:00</code></td>
+<td><strong>SLA met. Delta: 5 seconds. ✓</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="42-edge-cases">4.2 Edge Cases<a class="headerlink" href="#42-edge-cases" title="Permanent link">&para;</a></h3>
+<h4 id="ec-01-policy-expired-1-day-before-loss">EC-01: Policy Expired 1 Day Before Loss<a class="headerlink" href="#ec-01-policy-expired-1-day-before-loss" title="Permanent link">&para;</a></h4>
+<p><strong>Setup:</strong> <code>policy.policy_end_date = 2026-04-19</code>; <code>claim.date_of_loss = 2026-04-20</code></p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Agent Action</th>
+<th>Value Written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOAP query</td>
+<td>Agent receives <code>status=ACTIVE</code>, <code>policy_end_date=2026-04-19</code></td>
+<td><code>policy_snapshot</code> written (write-once)</td>
+</tr>
+<tr>
+<td>Rule 4.2</td>
+<td><code>policy.status=ACTIVE</code> → pass</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Rule 4.3</td>
+<td><code>date_of_loss=2026-04-20 &gt; policy_end_date=2026-04-19</code> → <strong>VIOLATION</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Rule 4.3 action</td>
+<td>Set <code>validation_status=INVALID</code>; set <code>routing_target=HUMAN_REVIEW</code>; set <code>human_review_reason="COVERAGE_DATE_VIOLATION: date_of_loss=2026-04-20 exceeds policy_end_date=2026-04-19 for policy_id=POL-XXXXX"</code></td>
+<td><code>validation_status=INVALID</code></td>
+</tr>
+<tr>
+<td>Halt</td>
+<td>Agent does NOT set <code>status=ROUTED</code>; does NOT notify claimant</td>
+<td><code>status=VALIDATED</code> (blocked)</td>
+</tr>
+<tr>
+<td>Notify</td>
+<td>Agent notifies specialist queue with <code>claim_id</code> and <code>human_review_reason</code></td>
+<td>Specialist queue receives event</td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td>Claim blocked at <code>VALIDATED</code>; <code>routing_target=HUMAN_REVIEW</code>; no premature acknowledgement; <code>human_review_reason</code> cites exact date boundary ✓</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important:</strong> The agent sets <code>validation_status=INVALID</code> as a flag — it does not finalize the claim as rejected. The human specialist must confirm or reverse the determination. A 1-day expiry discrepancy may involve a retroactive renewal; the agent must not foreclose that resolution path.</p>
+<hr />
+<h4 id="ec-02-incomplete-claim-data-low-extraction-confidence">EC-02: Incomplete Claim Data (Low Extraction Confidence)<a class="headerlink" href="#ec-02-incomplete-claim-data-low-extraction-confidence" title="Permanent link">&para;</a></h4>
+<p><strong>Setup:</strong> Phone transcript is partially inaudible. NLP extracts <code>severity_score=null</code>, <code>loss_type=null</code>. <code>extraction_confidence=0.61</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Agent Action</th>
+<th>Value Written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NLP extraction</td>
+<td>Agent computes <code>extraction_confidence=0.61</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Threshold check</td>
+<td><code>0.61 &lt; EXTRACTION_CONFIDENCE_THRESHOLD (0.75)</code> → Redline RL-01 triggered</td>
+<td>—</td>
+</tr>
+<tr>
+<td>RL-01 action</td>
+<td>Set <code>routing_target=HUMAN_REVIEW</code>; set <code>human_review_reason="LOW_EXTRACTION_CONFIDENCE: score=0.61 below threshold=0.75; null fields: severity_score, loss_type"</code></td>
+<td><code>routing_target=HUMAN_REVIEW</code></td>
+</tr>
+<tr>
+<td>RL-01 action</td>
+<td>Do NOT write <code>agent_reasoning</code>; do NOT write any extracted fields (they are unreliable)</td>
+<td>No NLP fields written</td>
+</tr>
+<tr>
+<td>RL-01 action</td>
+<td>Set <code>status=TRIAGED</code></td>
+<td><code>status=TRIAGED</code> (blocked)</td>
+</tr>
+<tr>
+<td>Notify</td>
+<td>Agent notifies specialist queue; includes <code>claim_id</code>, <code>raw_payload_url</code>, <code>sla_deadline</code></td>
+<td>Specialist queue receives event</td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td>No SOAP query attempted; no policy snapshot; no adjuster assigned; specialist receives <code>raw_payload_url</code> for manual extraction; <code>sla_deadline</code> is visible so specialist can prioritize ✓</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="ec-03-duplicate-claim-detection">EC-03: Duplicate Claim Detection<a class="headerlink" href="#ec-03-duplicate-claim-detection" title="Permanent link">&para;</a></h4>
+<p><strong>Setup:</strong> New payload arrives at 10:30:00 UTC. Existing claim <code>ORIG-001</code> has <code>policy_id="POL-12345"</code>, <code>date_of_loss=2026-04-20</code>, <code>loss_type=AUTO</code>, and <code>status=ROUTED</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Agent Action</th>
+<th>Value Written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ingestion</td>
+<td>New payload uploaded to DMS successfully; <code>document_url</code> returned</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Dedup query (post-extraction)</td>
+<td>Agent extracts <code>policy_id="POL-12345"</code>, <code>date_of_loss=2026-04-20</code>, <code>loss_type=AUTO</code>; queries: <code>SELECT claim_id FROM claim WHERE policy_id='POL-12345' AND date_of_loss='2026-04-20' AND loss_type='AUTO' AND status NOT IN ('RECEIVED', 'WITHDRAWN')</code></td>
+<td>Match found: <code>ORIG-001</code></td>
+</tr>
+<tr>
+<td>Duplicate detected</td>
+<td>Agent does NOT create a new claim record</td>
+<td>No claim record written</td>
+</tr>
+<tr>
+<td>Log</td>
+<td>Agent logs: <code>DUPLICATE_DETECTED: incoming_payload matches claim_id=ORIG-001</code> (no claimant PII in log)</td>
+<td>Log entry</td>
+</tr>
+<tr>
+<td>Notify</td>
+<td>Agent notifies specialist queue: <code>"DUPLICATE_CLAIM: incoming payload references claim_id=ORIG-001 which is already in ROUTED state"</code></td>
+<td>Specialist queue event</td>
+</tr>
+<tr>
+<td>Return</td>
+<td>Agent returns structured error to ingestion caller: <code>{ "error": "DUPLICATE_DETECTED", "existing_claim_id": "ORIG-001", "status": "ROUTED" }</code></td>
+<td>Error response</td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td>No second claim record created; <code>ORIG-001</code> unaffected; specialist decides whether to merge, reject, or authorize a new claim ✓</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="43-failure-modes">4.3 Failure Modes<a class="headerlink" href="#43-failure-modes" title="Permanent link">&para;</a></h3>
+<h4 id="fm-01-soap-endpoint-timeout-all-3-attempts">FM-01: SOAP Endpoint Timeout (All 3 Attempts)<a class="headerlink" href="#fm-01-soap-endpoint-timeout-all-3-attempts" title="Permanent link">&para;</a></h4>
+<p><strong>Setup:</strong> <code>MAX_SOAP_RETRIES=3</code>, <code>SOAP_REQUEST_TIMEOUT_SECONDS=8</code>, <code>SOAP_RETRY_BACKOFF_SECONDS=2</code></p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Timestamp Offset</th>
+<th>Agent Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attempt 1 initiated</td>
+<td>t=0s</td>
+<td><code>GetPolicyDetails</code> query sent</td>
+</tr>
+<tr>
+<td>Attempt 1 timeout</td>
+<td>t=8s</td>
+<td>Timeout; <code>retry_count=1</code>; calculate backoff: <code>2 * (1^2) = 2s</code></td>
+</tr>
+<tr>
+<td>Wait</td>
+<td>t=8–10s</td>
+<td>Agent waits 2 seconds</td>
+</tr>
+<tr>
+<td>Attempt 2 initiated</td>
+<td>t=10s</td>
+<td><code>GetPolicyDetails</code> query sent</td>
+</tr>
+<tr>
+<td>Attempt 2 timeout</td>
+<td>t=18s</td>
+<td>Timeout; <code>retry_count=2</code>; calculate backoff: <code>2 * (2^2) = 8s</code></td>
+</tr>
+<tr>
+<td>Wait</td>
+<td>t=18–26s</td>
+<td>Agent waits 8 seconds</td>
+</tr>
+<tr>
+<td>Attempt 3 initiated</td>
+<td>t=26s</td>
+<td><code>GetPolicyDetails</code> query sent</td>
+</tr>
+<tr>
+<td>Attempt 3 timeout</td>
+<td>t=34s</td>
+<td>Timeout; <code>retry_count=3</code>; <code>retry_count &gt;= MAX_SOAP_RETRIES</code></td>
+</tr>
+<tr>
+<td>Redline RL-02 triggered</td>
+<td>t=34s</td>
+<td>Set <code>status=ESCALATED</code>; set <code>routing_target=SOAP_ESCALATION_QUEUE</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>t=34s</td>
+<td>Set <code>human_review_reason="SOAP_EXHAUSTED: 3 timeouts for policy_id={policy_id}"</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>t=34s</td>
+<td>Synchronously notify specialist queue with <code>claim_id</code>, <code>sla_deadline</code>, <code>human_review_reason</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>t=34s</td>
+<td>No 4th SOAP attempt; no <code>validation_status</code> set; no adjuster assigned</td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td>Claim in <code>ESCALATED</code> state 34 seconds after first attempt; 7,166 seconds remain in SLA window for human resolution ✓</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="fm-02-nlp-confidence-score-below-threshold">FM-02: NLP Confidence Score Below Threshold<a class="headerlink" href="#fm-02-nlp-confidence-score-below-threshold" title="Permanent link">&para;</a></h4>
+<p><strong>Setup:</strong> <code>extraction_confidence=0.68</code> (below <code>EXTRACTION_CONFIDENCE_THRESHOLD=0.75</code>)</p>
+<p>The threshold is a binary gate. There are no confidence bands or graduated responses. Any score below the threshold triggers identical behavior regardless of whether the score is <code>0.74</code> (just under) or <code>0.40</code> (far under).</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Agent Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Confidence computed</td>
+<td><code>extraction_confidence=0.68</code></td>
+</tr>
+<tr>
+<td>Gate evaluation</td>
+<td><code>0.68 &lt; 0.75</code> → threshold not met</td>
+</tr>
+<tr>
+<td>RL-01 triggered</td>
+<td>Set <code>routing_target=HUMAN_REVIEW</code>; set <code>human_review_reason="LOW_EXTRACTION_CONFIDENCE: score=0.68 below threshold=0.75"</code>; identify null or low-confidence fields and list them in <code>human_review_reason</code></td>
+</tr>
+<tr>
+<td>Pipeline halted</td>
+<td>No SOAP query; no <code>policy_snapshot</code>; no <code>routing_target</code> other than <code>HUMAN_REVIEW</code>; no claimant notification</td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>Specialist queue notified synchronously with <code>claim_id</code>, <code>raw_payload_url</code>, <code>sla_deadline</code></td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td>Claim in <code>TRIAGED</code> state; <code>routing_target=HUMAN_REVIEW</code>; specialist receives the raw payload URL to perform manual extraction ✓</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="fm-03-crm-api-returns-500-internal-server-error">FM-03: CRM API Returns 500 Internal Server Error<a class="headerlink" href="#fm-03-crm-api-returns-500-internal-server-error" title="Permanent link">&para;</a></h4>
+<p><strong>Setup:</strong> CRM returns <code>500</code> on first PATCH attempt.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Agent Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First PATCH attempt</td>
+<td><code>PATCH /claims/{claim_id}</code> → <code>500 Internal Server Error</code></td>
+</tr>
+<tr>
+<td>Log</td>
+<td><code>CRM_FAILURE: claim_id={claim_id}, attempt=1, http_status=500</code> (no PII)</td>
+</tr>
+<tr>
+<td>Wait</td>
+<td>Agent waits <code>CRM_RETRY_BACKOFF_SECONDS</code></td>
+</tr>
+<tr>
+<td>Second PATCH attempt</td>
+<td><code>PATCH /claims/{claim_id}</code> → <code>500 Internal Server Error</code></td>
+</tr>
+<tr>
+<td>Log</td>
+<td><code>CRM_FAILURE: claim_id={claim_id}, attempt=2, http_status=500</code></td>
+</tr>
+<tr>
+<td>Redline RL-05 triggered</td>
+<td>Set <code>routing_target=HUMAN_REVIEW</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>Set <code>human_review_reason="CRM_UPDATE_FAILED: HTTP 500 on both attempts; intended routing_target={intended_target}; claim_id={claim_id}"</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>Note: the intended <code>routing_target</code> is embedded in <code>human_review_reason</code> so the specialist can manually perform the CRM update with the correct value</td>
+</tr>
+<tr>
+<td>—</td>
+<td>Notify specialist queue synchronously with <code>claim_id</code>, intended <code>routing_target</code>, <code>sla_deadline</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>Do NOT set <code>status=ROUTED</code>; do NOT send claimant acknowledgement</td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td>Claim remains in <code>VALIDATED</code> state; specialist can manually PATCH CRM with the intended <code>routing_target</code> and then trigger the acknowledgement step ✓</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deliverable-5-assumptions-validation-plan">Deliverable 5: Assumptions &amp; Validation Plan<a class="headerlink" href="#deliverable-5-assumptions-validation-plan" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Assumption</th>
+<th>Risk If False</th>
+<th>Validation Question for IT Lead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A-01</td>
+<td>The SOAP <code>GetPolicyDetails</code> endpoint is reachable from the agent's runtime network without VPN or IP allowlist requirements that are not already provisioned.</td>
+<td>Every claim will exhaust <code>MAX_SOAP_RETRIES</code> and <code>ESCALATED</code>; the system is functionally non-operational from day one.</td>
+<td>"Does <code>GetPolicyDetails</code> require the calling system's IP to appear on a firewall allowlist or require VPN tunnel? If so, who owns that allowlist and what is the provisioning lead time?"</td>
+</tr>
+<tr>
+<td>A-02</td>
+<td><code>GetPolicyDetails</code> has a p95 response time &lt; 8 seconds under the expected query rate (300 queries/day, peak ~60/hour).</td>
+<td>SOAP queries will timeout at the <code>SOAP_REQUEST_TIMEOUT_SECONDS</code> threshold under normal load; escalation rate will exceed SM-04 target; specialist queue will be overwhelmed.</td>
+<td>"What is the observed p95 response time for <code>GetPolicyDetails</code> under today's query load? Is there a published SLA for the endpoint? Can you share a 30-day latency histogram?"</td>
+</tr>
+<tr>
+<td>A-03</td>
+<td><code>policy_id</code> is present and correctly formatted in all three source channel payloads (email, phone transcript, web form) in ≥ 95% of submissions.</td>
+<td>NLP extraction will fail to identify the policy key; every such claim routes to <code>HUMAN_REVIEW</code> at RL-01; SM-06 extraction confidence pass rate will degrade below target.</td>
+<td>"In the last 90 days of raw FNOL submissions, what percentage of phone transcripts and emails contained a readable, correctly formatted policy number? Do you have a sample dataset we can analyze?"</td>
+</tr>
+<tr>
+<td>A-04</td>
+<td>The CRM <code>PATCH /claims/{id}</code> endpoint is part of a versioned, stable API contract; the response body includes <code>assigned_specialist_id</code>; and the queue names (e.g., <code>AUTO_ADJUSTER_STANDARD</code>) in the payload correspond exactly to valid CRM routing queue identifiers.</td>
+<td>Agent will PATCH valid HTTP requests to CRM with invalid queue names → CRM returns 400 → all claims for affected loss types route to <code>HUMAN_REVIEW</code>; SM-02 routing accuracy collapses.</td>
+<td>"Can you provide the current canonical list of adjuster queue identifiers from the CRM API? Are these stable across CRM releases, or are they subject to change during the project timeline?"</td>
+</tr>
+<tr>
+<td>A-05</td>
+<td>Labeled historical routing data (≥ 90 days; ≥ 10,000 claims) is available to empirically calibrate <code>EXTRACTION_CONFIDENCE_THRESHOLD</code> and validate NLP field extraction accuracy.</td>
+<td>The 0.75 default threshold is unvalidated; it may be too aggressive (routing too many claims to HUMAN_REVIEW) or too lenient (passing low-quality extractions through to routing). SM-02 and SM-06 targets cannot be set with confidence.</td>
+<td>"Do you have a labeled dataset of historical FNOL submissions with ground-truth values for loss_type, severity_score, claim_value, and date_of_loss? If so, in what format and how many records?"</td>
+</tr>
+<tr>
+<td>A-06</td>
+<td>The DMS write endpoint supports ≥ 60 concurrent document uploads per hour without degradation, contention, or rate limiting.</td>
+<td>Ingestion will fail at peak load; claims will not be created; SLA timers will not start; the morning batch will backlog into the afternoon SLA window.</td>
+<td>"Has the DMS been load-tested at 60 concurrent uploads per hour? What is its published write throughput SLA? Is it a shared system with other tenants who could cause write contention?"</td>
+</tr>
+<tr>
+<td>A-07</td>
+<td><code>claim_value</code> is explicitly stated (in dollar or currency terms) in ≥ 80% of FNOL payloads, making it extractable by NLP rather than requiring estimation from loss description.</td>
+<td>The high-value routing rule (Rule 4.1) cannot be reliably applied; high-value claims may reach standard adjuster queues instead of <code>HUMAN_ADJUSTER_HIGH_PRIORITY</code>; SM-02 accuracy degrades for this critical segment.</td>
+<td>"Of your historical high-value claims (&gt; $10,000), what percentage explicitly stated a claim amount in the original FNOL submission text? Do claimants typically quote a damage estimate at first notice?"</td>
+</tr>
+<tr>
+<td>A-08</td>
+<td>The SOAP response for <code>CoveredLossTypes</code> returns a structured, machine-readable array (e.g., a repeating XML element with controlled vocabulary), not a free-text description field.</td>
+<td>Rule 4.5 (loss type coverage) cannot be evaluated programmatically; the agent cannot parse free-text coverage descriptions; every claim will require human validation of coverage eligibility.</td>
+<td>"In the WSDL schema, is <code>CoveredLossTypes</code> defined as a repeating structured element with an enumerated type, or is it a free-text narrative field? Can you share the WSDL or a sample response?"</td>
+</tr>
+<tr>
+<td>A-09</td>
+<td>The claimant notification channel used in the <code>ACKNOWLEDGED</code> step is a pre-provisioned, documented service (e.g., SMTP relay, SMS gateway, or vendor notification API) with a known contract and &lt; 5s response time.</td>
+<td>The <code>ACKNOWLEDGED</code> step cannot be completed; <code>acknowledged_at</code> cannot be set; end-to-end SLA compliance (SM-01) cannot be measured or guaranteed.</td>
+<td>"What outbound notification service should the agent call to send claimant acknowledgement (email, SMS, or in-app)? Is it already provisioned and does it have a documented API contract we can integrate against?"</td>
+</tr>
+<tr>
+<td>A-10</td>
+<td>Duplicate detection on composite key <code>(policy_id, date_of_loss, loss_type)</code> correctly identifies all true duplicates without producing false positives — i.e., a single policy cannot generate two distinct legitimate FNOL claims for the same loss type on the same date.</td>
+<td>Legitimate re-submissions (e.g., after a system error or claimant correction) will be suppressed; valid claims will be blocked at ingestion; claimants will experience invisible failures.</td>
+<td>"Is there any operational scenario where a single policy legitimately generates two separate FNOL submissions for the same loss type on the same date? If so, what field distinguishes them (e.g., a unique claimant reference number)?"</td>
+</tr>
+<tr>
+<td>A-11</td>
+<td>The agent runtime environment has stable network connectivity to the SOAP endpoint, CRM, and DMS simultaneously. Partial connectivity failures (e.g., only SOAP is unreachable) are detectable and do not produce silent data corruption.</td>
+<td>A partial network failure may cause the agent to proceed through some pipeline steps while failing others, producing claims in inconsistent states (e.g., <code>ROUTED</code> in CRM but not in the local claim record).</td>
+<td>"Are the SOAP endpoint, CRM, and DMS hosted in the same network zone as the agent runtime? What network monitoring is in place to detect partial connectivity failures? Is there a circuit-breaker or health-check endpoint for each dependency?"</td>
+</tr>
+<tr>
+<td>A-12</td>
+<td>Peak daily volume does not exceed 3× the 300-claim baseline (i.e., ≤ 900 claims/day) under storm, disaster, or seasonal spike conditions. The agent has no built-in load-shedding or queue management for volumes above this.</td>
+<td>Under a major event (e.g., regional storm producing 1,500 claims in one day), SOAP query rates will exceed the endpoint's capacity; CRM PATCH rates will breach rate limits; SLA breach rate will spike above SM-03 target.</td>
+<td>"What is the maximum single-day FNOL volume observed in the past 5 years? Does it follow a predictable seasonal pattern? Is there a documented peak-capacity plan (e.g., overflow to a secondary SOAP endpoint or manual intake team)?"</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
